@@ -3604,6 +3604,18 @@ CheckIfCurPartyMonIsFitToFight:
 
 TryToRunAwayFromBattle:
 ; Run away from battle, with or without item
+	ld a, [wBattleMode]
+	dec a
+	jp nz, .cant_run_from_trainer
+
+	; Ghost-types can always run
+	ld a, [wBattleMonType1]
+	cp GHOST
+	jp z, .can_escape
+
+	ld a, [wBattleMonType2]
+	cp GHOST
+	jp z, .can_escape
 	ld a, [wBattleType]
 	cp BATTLETYPE_DEBUG
 	jp z, .can_escape
@@ -3622,9 +3634,8 @@ TryToRunAwayFromBattle:
 	and a
 	jp nz, .can_escape
 
-	ld a, [wBattleMode]
-	dec a
-	jp nz, .cant_run_from_trainer
+
+
 
 	ld a, [wEnemySubStatus5]
 	bit SUBSTATUS_CANT_RUN, a
