@@ -122,29 +122,14 @@ GetMonSubmenuItems:
 	ld a, [wLinkMode]
 	and a
 	jr nz, .skip_moves
-	ld a, MON_MOVES
-	call GetPartyParamLocation
-	ld d, h
-	ld e, l
-	ld c, NUM_MOVES
-.loop
-	push bc
-	push de
-	ld a, [de]
-	and a
-	jr z, .next
-	push hl
-	call IsFieldMove
-	pop hl
-	jr nc, .next
-	call AddMonMenuItem
 
-.next
-	pop de
-	inc de
-	pop bc
-	dec c
-	jr nz, .loop
+	call CanUseFlash
+	call CanUseFly
+	call CanUseDig
+	call Can_Use_Sweet_Scent
+	call CanUseTeleport
+	call CanUseSoftboiled
+	call CanUseMilkdrink
 
 .skip_moves
 	ld a, MONMENUITEM_STATS
