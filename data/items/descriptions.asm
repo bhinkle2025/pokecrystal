@@ -135,7 +135,7 @@ ItemDescriptions:
 	dw StarPieceDesc
 	dw BasementKeyDesc
 	dw PassDesc
-	dw TeruSama9Desc
+	dw EvioliteDesc
 	dw TeruSama10Desc
 	dw TeruSama11Desc
 	dw CharcoalDesc
@@ -782,8 +782,9 @@ PassDesc:
 	db   "A ticket for the"
 	next "MAGNET TRAIN.@"
 
-TeruSama9Desc:
-	db   "?@"
+EvioliteDesc:
+	db   "Boosts Defense if"
+	next "not fully evolved.@"
 
 TeruSama10Desc:
 	db   "?@"

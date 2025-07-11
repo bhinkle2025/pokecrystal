@@ -175,7 +175,7 @@ MartOlivine:
 	db AWAKENING
 	db ICE_HEAL
 	db SUPER_REPEL
-	db SURF_MAIL
+	db RARE_CANDY
 	db -1 ; end
 
 MartEcruteak:
