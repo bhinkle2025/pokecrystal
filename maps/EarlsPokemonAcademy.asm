@@ -4,6 +4,7 @@
 	const EARLSPOKEMONACADEMY_GAMEBOY_KID1
 	const EARLSPOKEMONACADEMY_GAMEBOY_KID2
 	const EARLSPOKEMONACADEMY_YOUNGSTER2
+	const EARLSPOKEMONACADEMY_YOUNGSTER3
 	const EARLSPOKEMONACADEMY_POKEDEX
 
 EarlsPokemonAcademy_MapScripts:
@@ -59,6 +60,79 @@ EarlsPokemonAcademyGameboyKid2Script:
 
 EarlsPokemonAcademyYoungster2Script:
 	jumptextfaceplayer EarlsPokemonAcademyYoungster2Text
+
+EarlsPokemonAcademyYoungster3Script:
+	faceplayer
+	checkevent EVENT_GOT_YOUNGSTER_POKEMON
+	iftrue .GiftDone
+	readvar VAR_PARTYCOUNT
+	ifequal PARTY_LENGTH, .PartyFullGift
+	opentext
+	writetext YoungsterIntroText
+	waitbutton
+	writetext YoungsterDismissiveText
+	waitbutton
+	yesorno
+	iffalse .Fair
+	random 3
+	ifequal 0, .GiveBulbasaur
+	ifequal 1, .GiveCharmander
+	ifequal 2, .GiveSquirtle
+
+.GiveBulbasaur:
+	getmonname STRING_BUFFER_3, BULBASAUR
+	promptbutton
+	opentext
+	writetext ReceivedGiftText
+	waitbutton
+	givepoke BULBASAUR, 5
+	setevent EVENT_GOT_YOUNGSTER_POKEMON
+	closetext
+	end
+
+.GiveCharmander:
+	getmonname STRING_BUFFER_3, CHARMANDER
+	promptbutton
+	opentext
+	writetext ReceivedGiftText
+	waitbutton
+	givepoke CHARMANDER, 5
+	setevent EVENT_GOT_YOUNGSTER_POKEMON
+	closetext
+	end
+
+.GiveSquirtle:
+	getmonname STRING_BUFFER_3, SQUIRTLE
+	promptbutton
+	opentext
+	writetext ReceivedGiftText
+	waitbutton
+	givepoke SQUIRTLE, 5
+	setevent EVENT_GOT_YOUNGSTER_POKEMON
+	closetext
+	end
+
+.GiftDone:
+	opentext
+	writetext YoungsterAfterGiftText
+	waitbutton
+	closetext
+	end
+
+.PartyFullGift:
+	opentext
+	writetext PartyFullGiftText
+	waitbutton
+	closetext
+	end
+
+.Fair:
+	opentext
+	writetext FairText
+	waitbutton
+	closetext
+	end
+
 
 AcademyBlackboard:
 	opentext
@@ -407,6 +481,59 @@ AcademyStickerMachineText:
 	para "stickers!"
 	done
 
+YoungsterIntroText:
+	text "Hey, I got this"
+	line "weak #MON, and I"
+
+	para "really do not want"
+	line "to keep it."
+	done
+
+YoungsterDismissiveText:
+	text "I mean, it is kind"
+	line "of cute..."
+
+	para "But it is not very"
+	line "strong."
+
+	para "You want it?"
+	done
+
+YoungsterAfterGiftText:
+	text "Hope you make"
+	line "better use of it."
+
+	para "It was just taking"
+	line "up space, anyway."
+	done
+
+PartyFullGiftText:
+	text "Hey, your party"
+	line "is already full."
+
+	para "Come back after you"
+	line "make some room."
+	done
+
+FairText:
+	text "That is fair."
+	line "I cannot blame you."
+
+	para "Maybe someone else"
+	line "will want it."
+
+	para "It is not strong,"
+	line "but it deserves a chance."
+	done
+
+ReceivedGiftText:
+	text "<PLAYER> received"
+	line "@"
+	text_ram wStringBuffer3
+	text "!"
+	done
+
+
 EarlsPokemonAcademy_MapEvents:
 	db 0, 0 ; filler
 
@@ -428,4 +555,5 @@ EarlsPokemonAcademy_MapEvents:
 	object_event  3, 11, SPRITE_GAMEBOY_KID, SPRITEMOVEDATA_STANDING_DOWN, 0, 0, -1, -1, 0, OBJECTTYPE_SCRIPT, 0, EarlsPokemonAcademyGameboyKid1Script, -1
 	object_event  4, 11, SPRITE_GAMEBOY_KID, SPRITEMOVEDATA_STANDING_LEFT, 0, 0, -1, -1, PAL_NPC_RED, OBJECTTYPE_SCRIPT, 0, EarlsPokemonAcademyGameboyKid2Script, -1
 	object_event  4,  7, SPRITE_YOUNGSTER, SPRITEMOVEDATA_STANDING_UP, 0, 0, -1, -1, 0, OBJECTTYPE_SCRIPT, 0, EarlsPokemonAcademyYoungster2Script, -1
+	object_event  4,  9, SPRITE_YOUNGSTER, SPRITEMOVEDATA_STANDING_UP, 0, 0, -1, -1, PAL_NPC_RED, OBJECTTYPE_SCRIPT, 0, EarlsPokemonAcademyYoungster3Script, -1
 	object_event  2,  4, SPRITE_POKEDEX, SPRITEMOVEDATA_STILL, 0, 0, -1, -1, 0, OBJECTTYPE_SCRIPT, 0, AcademyNotebook, -1

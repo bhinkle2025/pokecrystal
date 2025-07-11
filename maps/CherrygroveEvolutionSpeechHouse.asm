@@ -1,6 +1,7 @@
 	object_const_def
 	const CHERRYGROVEEVOLUTIONSPEECHHOUSE_LASS
 	const CHERRYGROVEEVOLUTIONSPEECHHOUSE_YOUNGSTER
+	const CHERRYGROVEEVOLUTIONSPEECHHOUSE_TEACHER
 
 CherrygroveEvolutionSpeechHouse_MapScripts:
 	def_scene_scripts
@@ -21,6 +22,36 @@ CherrygroveEvolutionSpeechHouseLassScript:
 	closetext
 	end
 
+CherrygroveEvolutionSpeechHouseTeacherScript:
+	faceplayer
+	checkevent EVENT_GOT_EVIOLITE
+	iftrue .AlreadyGotEviolite
+	opentext
+	writetext EvioliteTeacherText
+	giveitem EVIOLITE
+	iffalse .BagFull
+	setevent EVENT_GOT_EVIOLITE
+	waitbutton
+	promptbutton
+	itemnotify
+	closetext
+	end
+
+.BagFull:
+	opentext
+	writetext BagFullText
+	waitbutton
+	closetext
+	end
+
+.AlreadyGotEviolite:
+	opentext
+	writetext EvioliteTeacherAfterText
+	waitbutton
+	closetext
+	end
+
+
 CherrygroveEvolutionSpeechHouseBookshelf:
 	jumpstd MagazineBookshelfScript
 
@@ -39,6 +70,39 @@ CherrygroveEvolutionSpeechHouseLassText:
 	line "if one did that!"
 	done
 
+EvioliteTeacherText:
+	text "Some #MON grow"
+	line "stronger when they"
+	
+	para "evolve, but not"
+	line "all of them need"
+	cont "to evolve to help."
+
+	para "This item boosts"
+	line "a #MON's Defense"
+	cont "and Sp. Def if it"
+
+	para "hasn't reached its"
+	line "final evolution."
+
+	para "Here, try it out."
+	done
+
+EvioliteTeacherAfterText:
+	text "Give that to a"
+	line "#MON that can"
+	cont "still evolve."
+
+	para "It'll become much"
+	line "tougher in battle!"
+	done
+
+BagFullText:
+	text "You have no"
+	line "room for this."
+	done
+
+
 CherrygroveEvolutionSpeechHouse_MapEvents:
 	db 0, 0 ; filler
 
@@ -55,3 +119,4 @@ CherrygroveEvolutionSpeechHouse_MapEvents:
 	def_object_events
 	object_event  3,  5, SPRITE_LASS, SPRITEMOVEDATA_STANDING_LEFT, 0, 0, -1, -1, PAL_NPC_GREEN, OBJECTTYPE_SCRIPT, 0, CherrygroveEvolutionSpeechHouseLassScript, -1
 	object_event  2,  5, SPRITE_YOUNGSTER, SPRITEMOVEDATA_STANDING_RIGHT, 0, 0, -1, -1, PAL_NPC_RED, OBJECTTYPE_SCRIPT, 0, CherrygroveEvolutionSpeechHouseYoungsterScript, -1
+	object_event  5,  3, SPRITE_TEACHER, SPRITEMOVEDATA_STANDING_DOWN, 0, 0, -1, -1, 0, OBJECTTYPE_SCRIPT, 0, CherrygroveEvolutionSpeechHouseTeacherScript, -1
