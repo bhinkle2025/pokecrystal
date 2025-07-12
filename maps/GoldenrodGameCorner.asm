@@ -1,9 +1,9 @@
-DEF GOLDENRODGAMECORNER_TM25_COINS      EQU 5500
-DEF GOLDENRODGAMECORNER_TM14_COINS      EQU 5500
-DEF GOLDENRODGAMECORNER_TM38_COINS      EQU 5500
+DEF GOLDENRODGAMECORNER_TM25_COINS      EQU 2000
+DEF GOLDENRODGAMECORNER_TM14_COINS      EQU 2000
+DEF GOLDENRODGAMECORNER_TM38_COINS      EQU 2000
 DEF GOLDENRODGAMECORNER_ABRA_COINS      EQU 100
-DEF GOLDENRODGAMECORNER_CUBONE_COINS    EQU 800
-DEF GOLDENRODGAMECORNER_WOBBUFFET_COINS EQU 1500
+DEF GOLDENRODGAMECORNER_CUBONE_COINS    EQU 600
+DEF GOLDENRODGAMECORNER_WOBBUFFET_COINS EQU 1200
 
 	object_const_def
 	const GOLDENRODGAMECORNER_CLERK
@@ -26,12 +26,14 @@ GoldenrodGameCorner_MapScripts:
 	callback MAPCALLBACK_OBJECTS, GoldenrodGameCornerMoveTutorCallback
 
 GoldenrodGameCornerMoveTutorCallback:
-	checkevent EVENT_BEAT_ELITE_FOUR
+	checkevent EVENT_BEAT_CHUCK
 	iffalse .finish
 	checkitem COIN_CASE
 	iffalse .move_tutor_inside
 	readvar VAR_WEEKDAY
+	ifequal MONDAY, .move_tutor_outside
 	ifequal WEDNESDAY, .move_tutor_outside
+	ifequal FRIDAY, .move_tutor_outside
 	ifequal SATURDAY, .move_tutor_outside
 .move_tutor_inside
 	appear GOLDENRODGAMECORNER_MOVETUTOR
@@ -152,9 +154,9 @@ GoldenrodGameCornerTMVendorMenuHeader:
 .MenuData:
 	db STATICMENU_CURSOR ; flags
 	db 4 ; items
-	db "TM25    5500@"
-	db "TM14    5500@"
-	db "TM38    5500@"
+	db "TM25    2000@"
+	db "TM14    2000@"
+	db "TM38    2000@"
 	db "CANCEL@"
 
 GoldenrodGameCornerPrizeMonVendorScript:
@@ -239,8 +241,8 @@ GoldenrodGameCornerPrizeMonVendorScript:
 	db STATICMENU_CURSOR ; flags
 	db 4 ; items
 	db "ABRA        100@"
-	db "CUBONE      800@"
-	db "WOBBUFFET  1500@"
+	db "CUBONE      600@"
+	db "WOBBUFFET  1200@"
 	db "CANCEL@"
 
 GoldenrodGameCornerPharmacistScript:
