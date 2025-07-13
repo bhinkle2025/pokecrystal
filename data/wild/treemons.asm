@@ -70,7 +70,7 @@ TreeMonSet_Route:
 	db 15, PINECO,     10
 	db 10, EXEGGCUTE,  10
 	db  5, EXEGGCUTE,  10
-	db  5, EXEGGCUTE,  10
+	db  5, FORRETRESS, 10
 	db -1
 
 TreeMonSet_Kanto:
