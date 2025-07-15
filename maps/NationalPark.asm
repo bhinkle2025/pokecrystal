@@ -302,8 +302,8 @@ NationalParkParlyzHeal:
 NationalParkTMDig:
 	itemball TM_DIG
 
-NationalParkHiddenFullHeal:
-	hiddenitem FULL_HEAL, EVENT_NATIONAL_PARK_HIDDEN_FULL_HEAL
+NationalParkHiddenSunStone:
+	hiddenitem SUN_STONE, EVENT_NATIONAL_PARK_HIDDEN_SUN_STONE
 
 NationalParkLassText:
 	text "Look! Check out my"
@@ -525,7 +525,7 @@ NationalPark_MapEvents:
 	def_bg_events
 	bg_event 14, 44, BGEVENT_READ, NationalParkRelaxationSquareSign
 	bg_event 27, 31, BGEVENT_READ, NationalParkBattleNoticeSign
-	bg_event  6, 47, BGEVENT_ITEM, NationalParkHiddenFullHeal
+	bg_event  6, 47, BGEVENT_ITEM, NationalParkHiddenSunStone
 	bg_event 12,  4, BGEVENT_READ, NationalParkTrainerTipsSign
 
 	def_object_events

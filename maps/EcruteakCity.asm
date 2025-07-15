@@ -85,8 +85,8 @@ EcruteakCityPokecenterSign:
 EcruteakCityMartSign:
 	jumpstd MartSignScript
 
-EcruteakCityHiddenHyperPotion:
-	hiddenitem HYPER_POTION, EVENT_ECRUTEAK_CITY_HIDDEN_HYPER_POTION
+EcruteakCityHiddenWaterStone:
+	hiddenitem WATER_STONE, EVENT_ECRUTEAK_CITY_HIDDEN_WATER_STONE
 
 UnusedMissingDaughterText: ; unreferenced
 	text "Oh, no. Oh, no…"
@@ -286,7 +286,7 @@ EcruteakCity_MapEvents:
 	bg_event  2, 10, BGEVENT_READ, BurnedTowerSign
 	bg_event 24, 27, BGEVENT_READ, EcruteakCityPokecenterSign
 	bg_event 30, 21, BGEVENT_READ, EcruteakCityMartSign
-	bg_event 23, 14, BGEVENT_ITEM, EcruteakCityHiddenHyperPotion
+	bg_event 23, 14, BGEVENT_ITEM, EcruteakCityHiddenWaterStone
 
 	def_object_events
 	object_event 18, 15, SPRITE_GRAMPS, SPRITEMOVEDATA_WANDER, 1, 1, -1, -1, 0, OBJECTTYPE_SCRIPT, 0, EcruteakCityGramps1Script, -1

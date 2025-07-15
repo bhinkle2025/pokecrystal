@@ -409,8 +409,8 @@ GoldenrodUndergroundCoinCase:
 GoldenrodUndergroundNoEntrySign:
 	jumptext GoldenrodUndergroundNoEntryText
 
-GoldenrodUndergroundHiddenParlyzHeal:
-	hiddenitem PARLYZ_HEAL, EVENT_GOLDENROD_UNDERGROUND_HIDDEN_PARLYZ_HEAL
+GoldenrodUndergroundHiddenThunderStone:
+	hiddenitem THUNDERSTONE, EVENT_GOLDENROD_UNDERGROUND_HIDDEN_THUNDERSTONE
 
 GoldenrodUndergroundHiddenSuperPotion:
 	hiddenitem SUPER_POTION, EVENT_GOLDENROD_UNDERGROUND_HIDDEN_SUPER_POTION
@@ -663,7 +663,7 @@ GoldenrodUnderground_MapEvents:
 	def_bg_events
 	bg_event 18,  6, BGEVENT_READ, BasementDoorScript
 	bg_event 19,  6, BGEVENT_READ, GoldenrodUndergroundNoEntrySign
-	bg_event  6, 13, BGEVENT_ITEM, GoldenrodUndergroundHiddenParlyzHeal
+	bg_event  6, 13, BGEVENT_ITEM, GoldenrodUndergroundHiddenThunderStone
 	bg_event  4, 18, BGEVENT_ITEM, GoldenrodUndergroundHiddenSuperPotion
 	bg_event 17,  8, BGEVENT_ITEM, GoldenrodUndergroundHiddenAntidote
 
