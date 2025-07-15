@@ -101,7 +101,7 @@ MoveEffectsPointers:
 	dw SleepTalk
 	dw DestinyBond
 	dw Reversal
-	dw Spite
+	dw Hex
 	dw FalseSwipe
 	dw HealBell
 	dw NormalHit

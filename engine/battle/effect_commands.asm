@@ -3395,7 +3395,7 @@ INCLUDE "engine/battle/move_effects/sleep_talk.asm"
 
 INCLUDE "engine/battle/move_effects/destiny_bond.asm"
 
-INCLUDE "engine/battle/move_effects/spite.asm"
+INCLUDE "engine/battle/move_effects/hex.asm"
 
 INCLUDE "engine/battle/move_effects/false_swipe.asm"
 

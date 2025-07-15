@@ -12,7 +12,7 @@ MoveDescriptions::
 	dw ThunderpunchDescription
 	dw ScratchDescription
 	dw VicegripDescription
-	dw GuillotineDescription
+	dw PlayRoughDescription
 	dw RazorWindDescription
 	dw SwordsDanceDescription
 	dw CutDescription
@@ -149,7 +149,7 @@ MoveDescriptions::
 	dw DizzyPunchDescription
 	dw SporeDescription
 	dw FlashDescription
-	dw PsywaveDescription
+	dw MoonblastDescription
 	dw SplashDescription
 	dw AcidArmorDescription
 	dw CrabhammerDescription
@@ -252,15 +252,14 @@ MoveDescriptions::
 	dw RockSmashDescription
 	dw WhirlpoolDescription
 	dw BeatUpDescription
+	dw NastyPlotDescription
 	assert_table_length NUM_ATTACKS
-	dw MoveFCDescription
 	dw MoveFDDescription
 	dw MoveFEDescription
 	dw MoveFFDescription
 	dw Move00Description
 	assert_table_length $100
 
-MoveFCDescription:
 MoveFDDescription:
 MoveFEDescription:
 MoveFFDescription:
@@ -311,9 +310,9 @@ VicegripDescription:
 	db   "Grips with power-"
 	next "ful pincers.@"
 
-GuillotineDescription:
-	db   "A one-hit KO,"
-	next "pincer attack.@"
+PlayRoughDescription:
+db   "Rough, playful hit"
+next "that may lower Atk.@"
 
 RazorWindDescription:
 	db   "1st turn: Prepare"
@@ -859,9 +858,9 @@ FlashDescription:
 	db   "Blinds the foe to"
 	next "reduce accuracy.@"
 
-PsywaveDescription:
-	db   "An attack with"
-	next "variable power.@"
+MoonblastDescription:
+	db   "Attacks with the"
+	next "power of the moon.@"
 
 SplashDescription:
 	db   "Has no effect"
@@ -1270,3 +1269,7 @@ WhirlpoolDescription:
 BeatUpDescription:
 	db   "Party #MON join"
 	next "in the attack.@"
+
+NastyPlotDescription:
+	db   "Sharply increases"
+	next "user's SPCL.ATK.@"
