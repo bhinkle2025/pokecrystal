@@ -36,7 +36,7 @@ MoveDescriptions::
 	dw TackleDescription
 	dw BodySlamDescription
 	dw WrapDescription
-	dw TakeDownDescription
+	dw GigaImpactDescription
 	dw ThrashDescription
 	dw DoubleEdgeDescription
 	dw TailWhipDescription
@@ -406,9 +406,9 @@ WrapDescription:
 	db   "Squeezes the foe"
 	next "for 2-5 turns.@"
 
-TakeDownDescription:
-	db   "A tackle that also"
-	next "hurts the user.@"
+GigaImpactDescription:
+	db   "A full-power slam"
+	next "that leaves user tired.@"
 
 ThrashDescription:
 	db   "Works 2-3 turns"
