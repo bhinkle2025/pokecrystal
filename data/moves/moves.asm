@@ -266,4 +266,5 @@ Moves:
 	move WHIRLPOOL,    EFFECT_TRAP_TARGET,        35, WATER,        SPECIAL,   85, 15,   0
 	move BEAT_UP,      EFFECT_MULTI_HIT,          30, DARK,         PHYSICAL, 100, 10,   0
 	move NASTY_PLOT,   EFFECT_SP_ATK_UP_2,         0, DARK,         STATUS,     0, 20,   0
+	move AIR_SLASH,    EFFECT_FLINCH_HIT,         75, FLYING,       SPECIAL,   95, 15,  30
 	assert_table_length NUM_ATTACKS

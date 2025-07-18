@@ -253,8 +253,8 @@ MoveDescriptions::
 	dw WhirlpoolDescription
 	dw BeatUpDescription
 	dw NastyPlotDescription
+	dw AirSlashDescription
 	assert_table_length NUM_ATTACKS
-	dw MoveFDDescription
 	dw MoveFEDescription
 	dw MoveFFDescription
 	dw Move00Description
@@ -1273,3 +1273,7 @@ BeatUpDescription:
 NastyPlotDescription:
 	db   "Sharply increases"
 	next "user's SPCL.ATK.@"
+
+AirSlashDescription:
+	db   "Slashes with a"
+	next "blade of air.@" 

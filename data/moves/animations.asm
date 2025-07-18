@@ -254,8 +254,8 @@ BattleAnimations::
 	dw BattleAnim_Whirlpool
 	dw BattleAnim_BeatUp
 	dw BattleAnim_NastyPlot
+	dw BattleAnim_AirSlash
 	assert_table_length NUM_ATTACKS + 1
-	dw BattleAnim_Dummy
 	dw BattleAnim_Dummy
 	dw BattleAnim_SweetScent2
 	assert_table_length $100
@@ -1535,6 +1535,7 @@ BattleAnim_FurySwipes:
 	anim_wait 32
 	anim_ret
 
+BattleAnim_AirSlash:
 BattleAnim_Cut:
 	anim_1gfx BATTLE_ANIM_GFX_CUT
 	anim_sound 0, 1, SFX_CUT

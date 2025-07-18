@@ -184,12 +184,13 @@ ButterfreeEvosAttacks:
 	db 0 ; no more evolutions
 	db 1, CONFUSION
 	db 10, CONFUSION
+	db 12, GUST
 	db 13, POISONPOWDER
 	db 14, STUN_SPORE
 	db 15, SLEEP_POWDER
 	db 18, SUPERSONIC
 	db 23, WHIRLWIND
-	db 28, GUST
+	db 28, AIR_SLASH
 	db 34, PSYBEAM
 	db 40, SAFEGUARD
 	db 0 ; no more level-up moves
@@ -2226,6 +2227,7 @@ HoothootEvosAttacks:
 	db 6, FORESIGHT
 	db 11, PECK
 	db 16, HYPNOSIS
+	db 18, AIR_SLASH
 	db 22, REFLECT
 	db 28, PSYCHIC_M
 	db 33, MOONBLAST
@@ -2242,6 +2244,7 @@ NoctowlEvosAttacks:
 	db 6, FORESIGHT
 	db 11, PECK
 	db 16, HYPNOSIS
+	db 18, AIR_SLASH
 	db 25, REFLECT
 	db 33, PSYCHIC_M
 	db 41, CONFUSION
@@ -2398,7 +2401,8 @@ TogeticEvosAttacks:
 	db 1, CHARM
 	db 7, METRONOME
 	db 18, SWEET_KISS
-	db 25, ENCORE
+	db 20, ENCORE
+	db 25, AIR_SLASH
 	db 31, SAFEGUARD
 	db 38, DOUBLE_EDGE
 	db 0 ; no more level-up moves
@@ -2622,6 +2626,7 @@ YanmaEvosAttacks:
 	db 31, SUPERSONIC
 	db 37, WING_ATTACK
 	db 43, SCREECH
+	db 45, AIR_SLASH
 	db 0 ; no more level-up moves
 
 WooperEvosAttacks:
