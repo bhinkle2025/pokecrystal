@@ -254,8 +254,8 @@ MoveDescriptions::
 	dw BeatUpDescription
 	dw NastyPlotDescription
 	dw AirSlashDescription
+	dw FairyWindDescription
 	assert_table_length NUM_ATTACKS
-	dw MoveFEDescription
 	dw MoveFFDescription
 	dw Move00Description
 	assert_table_length $100
@@ -1277,3 +1277,8 @@ NastyPlotDescription:
 AirSlashDescription:
 	db   "Slashes with a"
 	next "blade of air.@" 
+
+FairyWindDescription:
+	db   "A gust that raises"
+	next "the user's SPEED.@"
+

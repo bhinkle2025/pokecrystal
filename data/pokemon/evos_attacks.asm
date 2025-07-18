@@ -2225,13 +2225,13 @@ HoothootEvosAttacks:
 	db 1, TACKLE
 	db 1, GROWL
 	db 6, FORESIGHT
+	db 10, CONFUSION
 	db 11, PECK
 	db 16, HYPNOSIS
 	db 18, AIR_SLASH
 	db 22, REFLECT
 	db 28, PSYCHIC_M
 	db 33, MOONBLAST
-	db 34, CONFUSION
 	db 48, DREAM_EATER
 	db 0 ; no more level-up moves
 
@@ -2242,12 +2242,12 @@ NoctowlEvosAttacks:
 	db 1, FORESIGHT
 	db 1, PECK
 	db 6, FORESIGHT
+	db 10, CONFUSION
 	db 11, PECK
 	db 16, HYPNOSIS
 	db 18, AIR_SLASH
 	db 25, REFLECT
 	db 33, PSYCHIC_M
-	db 41, CONFUSION
 	db 43, MOONBLAST
 	db 57, DREAM_EATER
 	db 0 ; no more level-up moves
@@ -2403,6 +2403,7 @@ TogeticEvosAttacks:
 	db 18, SWEET_KISS
 	db 20, ENCORE
 	db 25, AIR_SLASH
+	db 28, FAIRY_WIND
 	db 31, SAFEGUARD
 	db 38, DOUBLE_EDGE
 	db 0 ; no more level-up moves
@@ -2537,6 +2538,8 @@ HoppipEvosAttacks:
 	db 5, SYNTHESIS
 	db 5, TAIL_WHIP
 	db 10, TACKLE
+	db 10, FAIRY_WIND
+	db 12, GUST
 	db 13, POISONPOWDER
 	db 15, STUN_SPORE
 	db 17, SLEEP_POWDER
@@ -2555,6 +2558,8 @@ SkiploomEvosAttacks:
 	db 5, SYNTHESIS
 	db 5, TAIL_WHIP
 	db 10, TACKLE
+	db 10, FAIRY_WIND
+	db 12, GUST
 	db 13, POISONPOWDER
 	db 15, STUN_SPORE
 	db 17, SLEEP_POWDER
@@ -2572,6 +2577,8 @@ JumpluffEvosAttacks:
 	db 5, SYNTHESIS
 	db 5, TAIL_WHIP
 	db 10, TACKLE
+	db 10, FAIRY_WIND
+	db 12, GUST
 	db 13, POISONPOWDER
 	db 15, STUN_SPORE
 	db 17, SLEEP_POWDER

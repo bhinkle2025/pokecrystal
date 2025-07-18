@@ -1782,6 +1782,12 @@ RapidSpin:
 	checkfaint
 	buildopponentrage
 	kingsrock
+	speedup
+	lowersub
+	statupanim
+	raisesub
+	statupmessage
+	statupfailtext
 	endmove
 
 MorningSun:
@@ -1949,14 +1955,18 @@ FutureSight:
 	checkobedience
 	usedmovetext
 	doturn
+	critical
 	damagestats
 	damagecalc
+	stab
 	futuresight
 	damagevariation ; skip here if last turn
 	checkhit
 	moveanimnosub
 	failuretext
 	applydamage
+	criticaltext
+	supereffectivetext
 	checkfaint
 	buildopponentrage
 	endmove
@@ -2093,4 +2103,26 @@ DefenseCurl:
 	raisesub
 	statupmessage
 	statupfailtext
+	endmove
+
+SpeedUpHit:
+	checkobedience
+	usedmovetext
+	doturn
+	critical
+	damagestats
+	damagecalc
+	stab
+	damagevariation
+	checkhit
+	effectchance
+	moveanim
+	failuretext
+	applydamage
+	criticaltext
+	supereffectivetext
+	checkfaint
+	buildopponentrage
+	speedup
+	statupmessage
 	endmove

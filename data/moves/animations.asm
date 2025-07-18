@@ -255,8 +255,8 @@ BattleAnimations::
 	dw BattleAnim_BeatUp
 	dw BattleAnim_NastyPlot
 	dw BattleAnim_AirSlash
+	dw BattleAnim_FairyWind
 	assert_table_length NUM_ATTACKS + 1
-	dw BattleAnim_Dummy
 	dw BattleAnim_SweetScent2
 	assert_table_length $100
 ; $100
@@ -1339,6 +1339,7 @@ BattleAnim_Sonicboom_JP: ; unreferenced
 	anim_wait 16
 	anim_ret
 
+BattleAnim_FairyWind:
 BattleAnim_Gust:
 BattleAnim_Sonicboom:
 	anim_2gfx BATTLE_ANIM_GFX_WIND, BATTLE_ANIM_GFX_HIT

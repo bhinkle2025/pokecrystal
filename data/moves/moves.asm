@@ -157,7 +157,7 @@ Moves:
 	move LEECH_LIFE,   EFFECT_LEECH_HIT,          80, BUG,          PHYSICAL, 100, 10,   0
 	move LOVELY_KISS,  EFFECT_SLEEP,               0, NORMAL,       STATUS,    75, 10,   0
 	move SKY_ATTACK,   EFFECT_SKY_ATTACK,        140, FLYING,       PHYSICAL,  90,  5,   0
-	move TRANSFORM,    EFFECT_PRIORITY_HIT,        0, NORMAL,       STATUS,   100, 10,   0
+	move TRANSFORM,    EFFECT_TRANSFORM,           0, NORMAL,       STATUS,   100, 10,   0
 	move BUBBLE,       EFFECT_SPEED_DOWN_HIT,     40, WATER,        SPECIAL,  100, 30,  10
 	move DIZZY_PUNCH,  EFFECT_CONFUSE_HIT,        70, NORMAL,       PHYSICAL, 100, 10,  20
 	move SPORE,        EFFECT_SLEEP,               0, GRASS,        STATUS,   100, 15,   0
@@ -180,7 +180,7 @@ Moves:
 	move SUBSTITUTE,   EFFECT_SUBSTITUTE,          0, NORMAL,       STATUS,   100, 10,   0
 	move STRUGGLE,     EFFECT_RECOIL_HIT,         50, NORMAL,       PHYSICAL, 100,  1,   0
 	move SKETCH,       EFFECT_SKETCH,              0, NORMAL,       STATUS,   100,  1,   0
-	move TRIPLE_KICK,  EFFECT_TRIPLE_KICK,        10, FIGHTING,     PHYSICAL,  90, 10,   0
+	move TRIPLE_KICK,  EFFECT_TRIPLE_KICK,        25, FIGHTING,     PHYSICAL,  90, 10,   0
 	move THIEF,        EFFECT_THIEF,              50, DARK,         PHYSICAL, 100, 10, 100
 	move SPIDER_WEB,   EFFECT_MEAN_LOOK,           0, BUG,          STATUS,   100, 10,   0
 	move MIND_READER,  EFFECT_LOCK_ON,             0, NORMAL,       STATUS,   100,  5,   0
@@ -242,7 +242,7 @@ Moves:
 	move BATON_PASS,   EFFECT_BATON_PASS,          0, NORMAL,       STATUS,   100, 40,   0
 	move ENCORE,       EFFECT_ENCORE,              0, NORMAL,       STATUS,   100,  5,   0
 	move PURSUIT,      EFFECT_PURSUIT,            40, DARK,         PHYSICAL, 100, 20,   0
-	move RAPID_SPIN,   EFFECT_RAPID_SPIN,         50, NORMAL,       PHYSICAL, 100, 40,   0
+	move RAPID_SPIN,   EFFECT_RAPID_SPIN,         50, NORMAL,       PHYSICAL, 100, 40, 100
 	move SWEET_SCENT,  EFFECT_EVASION_DOWN,        0, NORMAL,       STATUS,   100, 20,   0
 	move IRON_TAIL,    EFFECT_DEFENSE_DOWN_HIT,  100, STEEL,        PHYSICAL,  75, 15,  30
 	move METAL_CLAW,   EFFECT_ATTACK_UP_HIT,      50, STEEL,        PHYSICAL,  95, 35,  10
@@ -267,4 +267,5 @@ Moves:
 	move BEAT_UP,      EFFECT_MULTI_HIT,          30, DARK,         PHYSICAL, 100, 10,   0
 	move NASTY_PLOT,   EFFECT_SP_ATK_UP_2,         0, DARK,         STATUS,     0, 20,   0
 	move AIR_SLASH,    EFFECT_FLINCH_HIT,         75, FLYING,       SPECIAL,   95, 15,  30
+	move FAIRY_WIND,   EFFECT_SPEED_UP_HIT,       50, FAIRY,        SPECIAL,  100, 20, 100
 	assert_table_length NUM_ATTACKS
