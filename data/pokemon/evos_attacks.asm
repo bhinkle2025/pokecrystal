@@ -2732,6 +2732,11 @@ MisdreavusEvosAttacks:
 UnownEvosAttacks:
 	db 0 ; no more evolutions
 	db 1, HIDDEN_POWER
+	db 1, ANCIENTPOWER
+	db 1, AMNESIA
+	db 1, RECOVER
+	db 20, FUTURE_SIGHT
+	db 35, PSYCHIC_M
 	db 0 ; no more level-up moves
 
 WobbuffetEvosAttacks:
@@ -2754,6 +2759,7 @@ GirafarigEvosAttacks:
 	db 30, BATON_PASS
 	db 41, PSYBEAM
 	db 46, NASTY_PLOT
+	db 50, PSYCHIC_M
 	db 54, CRUNCH
 	db 0 ; no more level-up moves
 
@@ -3030,6 +3036,12 @@ OctilleryEvosAttacks:
 DelibirdEvosAttacks:
 	db 0 ; no more evolutions
 	db 1, PRESENT
+	db 1, PECK
+	db 1, ICE_PUNCH
+	db 25, DRILL_PECK
+	db 30, AMNESIA
+	db 35, RECOVER
+	db 40, BLIZZARD
 	db 0 ; no more level-up moves
 
 MantineEvosAttacks:
@@ -3037,10 +3049,12 @@ MantineEvosAttacks:
 	db 1, TACKLE
 	db 1, BUBBLE
 	db 10, SUPERSONIC
+	db 11, CONFUSE_RAY
+	db 14, WING_ATTACK
 	db 18, BUBBLEBEAM
 	db 32, AGILITY
-	db 40, WING_ATTACK
-	db 49, CONFUSE_RAY
+	db 36, AIR_SLASH
+	db 49, HYDRO_PUMP
 	db 0 ; no more level-up moves
 
 SkarmoryEvosAttacks:
@@ -3100,11 +3114,13 @@ PhanpyEvosAttacks:
 	db 0 ; no more evolutions
 	db 1, TACKLE
 	db 1, GROWL
-	db 9, DEFENSE_CURL
-	db 17, FLAIL
-	db 33, ROLLOUT
-	db 41, ENDURE
-	db 49, DOUBLE_EDGE
+	db 1, DEFENSE_CURL
+	db 10, ROLLOUT
+	db 12, MUD_SLAP
+	db 20, DIG
+	db 33, EARTHQUAKE
+	db 37, ENDURE
+	db 42, DOUBLE_EDGE
 	db 0 ; no more level-up moves
 
 DonphanEvosAttacks:
@@ -3116,7 +3132,8 @@ DonphanEvosAttacks:
 	db 24, FURY_ATTACK
 	db 33, ROLLOUT
 	db 41, RAPID_SPIN
-	db 49, EARTHQUAKE
+	db 43, EARTHQUAKE
+	db 50, GIGA_IMPACT
 	db 0 ; no more level-up moves
 
 Porygon2EvosAttacks:

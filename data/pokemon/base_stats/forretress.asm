@@ -1,6 +1,6 @@
 	db FORRETRESS ; 205
 
-	db  75,  90, 140,  40,  60,  60
+	db  85, 100, 140,  40,  80,  80
 	;   hp  atk  def  spd  sat  sdf
 
 	db BUG, STEEL ; type

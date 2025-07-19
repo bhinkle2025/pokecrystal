@@ -1,6 +1,6 @@
 	db GRANBULL ; 210
 
-	db  90, 120,  75,  45,  60,  60
+	db  100, 130,  85,  45,  70,  70
 	;   hp  atk  def  spd  sat  sdf
 
 	db FAIRY, FAIRY ; type
