@@ -196,7 +196,7 @@ EvolveAfterBattle_MasterLoop:
 	pop hl
 	ld a, [hli]
 	cp b
-	jp nz, .dont_evolve_2
+	jp nz, .dont_evolve_3
 	jp .proceed
 
 

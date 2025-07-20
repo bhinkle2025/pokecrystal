@@ -2259,9 +2259,9 @@ LedybaEvosAttacks:
 	db 0 ; no more evolutions
 	db 1, TACKLE
 	db 8, SUPERSONIC
-	db 15, COMET_PUNCH
-	db 22, LIGHT_SCREEN
-	db 22, REFLECT
+	db 12, LIGHT_SCREEN
+	db 12, REFLECT
+	db 24, COMET_PUNCH
 	db 22, SAFEGUARD
 	db 29, BATON_PASS
 	db 36, SWIFT
@@ -2275,9 +2275,9 @@ LedianEvosAttacks:
 	db 1, SUPERSONIC
 	db 1, MACH_PUNCH
 	db 8, SUPERSONIC
-	db 15, COMET_PUNCH
-	db 24, LIGHT_SCREEN
-	db 24, REFLECT
+	db 12, LIGHT_SCREEN
+	db 12, REFLECT
+	db 24, COMET_PUNCH
 	db 24, SAFEGUARD
 	db 33, BATON_PASS
 	db 42, SWIFT
