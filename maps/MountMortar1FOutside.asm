@@ -7,6 +7,45 @@ MountMortar1FOutside_MapScripts:
 
 	def_callbacks
 
+MountMortarB1FKiyoScript:
+	faceplayer
+	opentext
+	checkevent EVENT_GOT_TYROGUE_FROM_KIYO
+	iftrue .GotTyrogue
+	checkevent EVENT_BEAT_BLACKBELT_KIYO
+	iftrue .BeatKiyo
+	writetext MountMortarB1FKiyoIntroText
+	waitbutton
+	closetext
+	winlosstext MountMortarB1FKiyoWinText, 0
+	loadtrainer BLACKBELT_T, KIYO
+	startbattle
+	reloadmapafterbattle
+	setevent EVENT_BEAT_BLACKBELT_KIYO
+	opentext
+.BeatKiyo:
+	writetext MountMortarB1FTyrogueRewardText
+	promptbutton
+	waitsfx
+	readvar VAR_PARTYCOUNT
+	ifequal PARTY_LENGTH, .NoRoom
+	writetext MountMortarB1FReceiveMonText
+	playsound SFX_CAUGHT_MON
+	waitsfx
+	givepoke TYROGUE, 10
+	setevent EVENT_GOT_TYROGUE_FROM_KIYO
+.GotTyrogue:
+	writetext MountMortarB1FKiyoGotTyrogueText
+	waitbutton
+	closetext
+	end
+
+.NoRoom:
+	writetext MountMortarB1FKiyoFullPartyText
+	waitbutton
+	closetext
+	end
+
 MountMortar1FOutsideEther:
 	itemball ETHER
 
@@ -15,6 +54,67 @@ MountMortar1FOutsideRevive:
 
 MountMortar1FOutsideHiddenHyperPotion:
 	hiddenitem HYPER_POTION, EVENT_MOUNT_MORTAR_1F_OUTSIDE_HIDDEN_HYPER_POTION
+
+MountMortarB1FKiyoIntroText:
+	text "Hey!"
+
+	para "I am the KARATE"
+	line "KING!"
+
+	para "I train alone here"
+	line "in the dark!"
+
+	para "You!"
+	line "Battle with me!"
+
+	para "Hwaaarggh!"
+	done
+
+MountMortarB1FKiyoWinText:
+	text "Waaaarggh!"
+	line "I'm beaten!"
+	done
+
+MountMortarB1FTyrogueRewardText:
+	text "I am crushed."
+
+	para "My training is"
+	line "still not enough."
+
+	para "But a loss is a"
+	line "loss. I admit it."
+
+	para "As proof that you"
+	line "defeated me, I'll"
+
+	para "give you a rare"
+	line "fighting #MON."
+	done
+
+MountMortarB1FReceiveMonText:
+	text "<PLAYER> received"
+	line "TYROGUE."
+	done
+
+MountMortarB1FKiyoGotTyrogueText:
+	text "TYROGUE is a"
+	line "fighting-type."
+
+	para "It evolves into a"
+	line "tougher #MON."
+
+	para "Keep up the hard"
+	line "work. I'll keep"
+	cont "training too."
+
+	para "Farewell!"
+	done
+
+MountMortarB1FKiyoFullPartyText:
+	text "You have no room"
+	line "in your party!"
+	done
+
 
 MountMortar1FOutside_MapEvents:
 	db 0, 0 ; filler
@@ -38,3 +138,4 @@ MountMortar1FOutside_MapEvents:
 	def_object_events
 	object_event 13, 15, SPRITE_POKE_BALL, SPRITEMOVEDATA_STILL, 0, 0, -1, -1, 0, OBJECTTYPE_ITEMBALL, 0, MountMortar1FOutsideEther, EVENT_MOUNT_MORTAR_1F_OUTSIDE_ETHER
 	object_event 31, 18, SPRITE_POKE_BALL, SPRITEMOVEDATA_STILL, 0, 0, -1, -1, 0, OBJECTTYPE_ITEMBALL, 0, MountMortar1FOutsideRevive, EVENT_MOUNT_MORTAR_1F_OUTSIDE_REVIVE
+	object_event 11, 15, SPRITE_BLACK_BELT, SPRITEMOVEDATA_STANDING_LEFT, 0, 0, -1, -1, PAL_NPC_BROWN, OBJECTTYPE_SCRIPT, 0, MountMortarB1FKiyoScript, -1
