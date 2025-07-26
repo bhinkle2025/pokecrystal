@@ -2116,11 +2116,13 @@ CyndaquilEvosAttacks:
 	db 1, TACKLE
 	db 1, LEER
 	db 6, SMOKESCREEN
-	db 12, EMBER
-	db 19, QUICK_ATTACK
-	db 27, FLAME_WHEEL
-	db 36, SWIFT
-	db 46, FLAMETHROWER
+	db 10, EMBER
+	db 13, QUICK_ATTACK
+	db 19, FLAME_WHEEL
+	db 22, DEFENSE_CURL
+	db 28, ROLLOUT
+	db 31, SWIFT
+	db 37, FLAMETHROWER
 	db 0 ; no more level-up moves
 
 QuilavaEvosAttacks:
@@ -2128,27 +2130,28 @@ QuilavaEvosAttacks:
 	db 0 ; no more evolutions
 	db 1, TACKLE
 	db 1, LEER
-	db 1, SMOKESCREEN
 	db 6, SMOKESCREEN
-	db 12, EMBER
-	db 21, QUICK_ATTACK
-	db 31, FLAME_WHEEL
-	db 42, SWIFT
-	db 54, FLAMETHROWER
+	db 10, EMBER
+	db 13, QUICK_ATTACK
+	db 19, FLAME_WHEEL
+	db 22, DEFENSE_CURL
+	db 28, ROLLOUT
+	db 31, SWIFT
+	db 37, FLAMETHROWER
 	db 0 ; no more level-up moves
 
 TyphlosionEvosAttacks:
 	db 0 ; no more evolutions
 	db 1, TACKLE
 	db 1, LEER
-	db 1, SMOKESCREEN
-	db 1, EMBER
 	db 6, SMOKESCREEN
-	db 12, EMBER
-	db 21, QUICK_ATTACK
-	db 31, FLAME_WHEEL
-	db 45, SWIFT
-	db 60, FLAMETHROWER
+	db 10, EMBER
+	db 13, QUICK_ATTACK
+	db 19, FLAME_WHEEL
+	db 22, DEFENSE_CURL
+	db 28, ROLLOUT
+	db 31, SWIFT
+	db 37, FLAMETHROWER
 	db 0 ; no more level-up moves
 
 TotodileEvosAttacks:

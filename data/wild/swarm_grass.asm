@@ -6,56 +6,62 @@ SwarmGrassWildMons:
 	map_id DARK_CAVE_VIOLET_ENTRANCE
 	db 4 percent, 4 percent, 4 percent ; encounter rates: morn/day/nite
 	; morn
-	db 3, GEODUDE
-	db 3, DUNSPARCE
-	db 2, ZUBAT
-	db 2, GEODUDE
-	db 2, DUNSPARCE
-	db 4, DUNSPARCE
-	db 4, DUNSPARCE
+	;   %, species,         min, max
+	db 30, GEODUDE,           2,   5
+	db 30, DUNSPARCE,         2,   5
+	db 20, ZUBAT,             2,   5
+	db 10, GEODUDE,           2,   5
+	db  5, DUNSPARCE,         2,   5 
+	db  4, DUNSPARCE,         2,   5
+	db  1, DUNSPARCE,         2,   5
 	; day
-	db 3, GEODUDE
-	db 3, DUNSPARCE
-	db 2, ZUBAT
-	db 2, GEODUDE
-	db 2, DUNSPARCE
-	db 4, DUNSPARCE
-	db 4, DUNSPARCE
+	;   %, species,         min, max
+	db 30, GEODUDE,           2,   5
+	db 30, DUNSPARCE,         2,   5
+	db 20, ZUBAT,             2,   5
+	db 10, GEODUDE,           2,   5
+	db  5, DUNSPARCE,         2,   5 
+	db  4, DUNSPARCE,         2,   5
+	db  1, DUNSPARCE,         2,   5
 	; nite
-	db 3, GEODUDE
-	db 3, DUNSPARCE
-	db 2, ZUBAT
-	db 2, GEODUDE
-	db 2, DUNSPARCE
-	db 4, DUNSPARCE
-	db 4, DUNSPARCE
+	;   %, species,         min, max
+	db 30, GEODUDE,           2,   5
+	db 30, DUNSPARCE,         2,   5
+	db 20, ZUBAT,             2,   5
+	db 10, GEODUDE,           2,   5
+	db  5, DUNSPARCE,         2,   5  
+	db  4, DUNSPARCE,         2,   5
+	db  1, DUNSPARCE,         2,   5
 
 ; Yanma swarm
 	map_id ROUTE_35
 	db 10 percent, 10 percent, 10 percent ; encounter rates: morn/day/nite
 	; morn
-	db 12, NIDORAN_M
-	db 12, NIDORAN_F
-	db 12, YANMA
-	db 14, YANMA
-	db 14, PIDGEY
-	db 10, DITTO
-	db 10, DITTO
+	;   %, species,         min, max
+	db 30, NIDORAN_M,        11,  15
+	db 30, NIDORAN_F,        11,  15 
+	db 20, YANMA,            11,  15
+	db 10, YANMA,            11,  15
+	db  5, PIDGEY,           11,  15
+	db  4, DITTO,            11,  15
+	db  1, DITTO,            11,  15
 	; day
-	db 12, NIDORAN_M
-	db 12, NIDORAN_F
-	db 12, YANMA
-	db 14, YANMA
-	db 14, PIDGEY
-	db 10, DITTO
-	db 10, DITTO
+	;   %, species,         min, max
+	db 30, NIDORAN_M,        11,  15
+	db 30, NIDORAN_F,        11,  15 
+	db 20, YANMA,            11,  15
+	db 10, YANMA,            11,  15
+	db  5, PIDGEY,           11,  15
+	db  4, DITTO,            11,  15
+	db  1, DITTO,            11,  15
 	; nite
-	db 12, NIDORAN_M
-	db 12, NIDORAN_F
-	db 12, YANMA
-	db 14, YANMA
-	db 14, HOOTHOOT
-	db 10, DITTO
-	db 10, DITTO
+	;   %, species,         min, max
+	db 30, NIDORAN_M,        11,  15
+	db 30, NIDORAN_F,        11,  15
+	db 20, YANMA,            11,  15
+	db 10, YANMA,            11,  15
+	db  5, HOOTHOOT,         11,  15
+	db  4, DITTO,            11,  15
+	db  1, DITTO,            11,  15
 
 	db -1 ; end
