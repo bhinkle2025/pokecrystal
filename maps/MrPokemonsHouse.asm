@@ -50,8 +50,8 @@ MrPokemonsHouseMrPokemonEventScript:
 MrPokemonsHouse_MrPokemonScript:
 	faceplayer
 	opentext
-	checkitem RED_SCALE
-	iftrue .RedScale
+	checkevent EVENT_RIVAL_NEW_BARK_TOWN
+	iftrue .ExpShare
 	checkevent EVENT_GAVE_MYSTERY_EGG_TO_ELM
 	iftrue .AlwaysNewDiscoveries
 	writetext MrPokemonText_ImDependingOnYou
@@ -65,18 +65,12 @@ MrPokemonsHouse_MrPokemonScript:
 	closetext
 	end
 
-.RedScale:
-	writetext MrPokemonText_GimmeTheScale
-	yesorno
-	iffalse .refused
+.ExpShare:
+	writetext MrPokemonText_ExpShare
 	verbosegiveitem EXP_SHARE
 	iffalse .full
-	takeitem RED_SCALE
 	sjump .AlwaysNewDiscoveries
 
-.refused
-	writetext MrPokemonText_Disappointed
-	waitbutton
 .full
 	closetext
 	end
@@ -326,27 +320,23 @@ MrPokemonsHouse_OakText2:
 	line "counting on you!"
 	done
 
-MrPokemonText_GimmeTheScale:
-	text "Hm? That SCALE!"
-	line "What's that?"
-	cont "A red GYARADOS?"
+MrPokemonText_ExpShare:
+	text "Ah, <PLAYER>!"
+	line "Back already?"
 
-	para "That's rare! "
-	line "I, I want it…"
+	para "I heard you had"
+	line "your first battle."
+	cont "How exciting!"
 
-	para "<PLAY_G>, would you"
-	line "care to trade it?"
+	para "Battling teaches"
+	line "both you and your"
+	cont "#MON a lot."
 
-	para "I can offer this"
-	line "EXP.SHARE I got"
-	cont "from PROF.OAK."
+	para "Here, take this."
+	line "It'll help your"
+	cont "team grow stronger."
 	done
 
-MrPokemonText_Disappointed:
-	text "That's disappoint-"
-	line "ing. That happens"
-	cont "to be very rare."
-	done
 
 MrPokemonsHouse_ForeignMagazinesText:
 	text "It's packed with"
