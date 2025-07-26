@@ -1434,16 +1434,16 @@ JohtoGrassWildMons:
 	;   %, species,         min, max
 	db 30, LEDYBA,             4,   8 
 	db 30, CATERPIE,           4,   8
-	db 20, BELLSPROUT,         4,   8
-	db 10, PIDGEY,             4,   8
+	db 20, MAREEP,             4,   8
+	db 10, PICHU,              4,   8
 	db  5, WEEDLE,             4,   8
-	db  4, MAREEP,             4,   8
+	db  4, ELEKID,             4,   8
 	db  1, HOPPIP,             4,   8
 	; day
 	;   %, species,         min, max
 	db 30, PIDGEY,             4,   8
 	db 30, CATERPIE,           4,   8  
-	db 20, BELLSPROUT,         4,   8 
+	db 20, ELEKID,             4,   8 
 	db 10, PICHU,              4,   8
 	db  5, WEEDLE,             4,   8
 	db  4, MAREEP,             4,   8

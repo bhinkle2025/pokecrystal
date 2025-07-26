@@ -582,7 +582,7 @@ BirdKeeperGroup:
 	; BIRD_KEEPER (1)
 	db "ROD@", TRAINERTYPE_NORMAL
 	db  7, PIDGEY
-	db  7, PIDGEY
+	db  7, HOOTHOOT
 	db -1 ; end
 
 	; BIRD_KEEPER (2)
@@ -697,14 +697,14 @@ BirdKeeperGroup:
 LassGroup:
 	; LASS (1)
 	db "CARRIE@", TRAINERTYPE_MOVES
-	db 18, SNUBBULL,   SCARY_FACE, CHARM, BITE, LICK
+	db 18, AIPOM,   HEADBUTT, ROCK_SMASH, SAND_ATTACK, CUT
 	db -1 ; end
 
 	; LASS (2)
 	db "BRIDGET@", TRAINERTYPE_NORMAL
-	db 15, JIGGLYPUFF
-	db 15, JIGGLYPUFF
-	db 15, JIGGLYPUFF
+	db 15, PORYGON
+	db 15, DITTO
+	db 15, CHANSEY
 	db -1 ; end
 
 	; LASS (3)
@@ -1073,15 +1073,15 @@ CooltrainerFGroup:
 BeautyGroup:
 	; BEAUTY (1)
 	db "VICTORIA@", TRAINERTYPE_NORMAL
-	db  9, SENTRET
 	db 13, SENTRET
-	db 17, SENTRET
+	db 15, FURRET
+	db 17, TAUROS
 	db -1 ; end
 
 	; BEAUTY (2)
 	db "SAMANTHA@", TRAINERTYPE_MOVES
 	db 16, MEOWTH,     SCRATCH, GROWL, BITE, PAY_DAY
-	db 16, MEOWTH,     SCRATCH, GROWL, BITE, SLASH
+	db 16, EEVEE,     TACKLE, CHARM, SAND_ATTACK, QUICK_ATTACK
 	db -1 ; end
 
 	; BEAUTY (3)
@@ -1538,13 +1538,14 @@ BugCatcherGroup:
 
 	; BUG_CATCHER (6)
 	db "AL@", TRAINERTYPE_NORMAL
-	db 12, CATERPIE
-	db 12, WEEDLE
+	db  9, METAPOD
+	db 12, BUTTERFREE
 	db -1 ; end
 
 	; BUG_CATCHER (7)
 	db "JOSH@", TRAINERTYPE_NORMAL
 	db 13, PARAS
+	db 15, YANMA
 	db -1 ; end
 
 	; BUG_CATCHER (8)

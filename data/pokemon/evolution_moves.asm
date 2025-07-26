@@ -191,7 +191,7 @@ EvolutionMoves::
 	db NO_MOVE      ; JUMPLUFF
 	db NO_MOVE      ; AIPOM
 	db NO_MOVE      ; SUNKERN
-	db NO_MOVE      ; SUNFLORA
+	db SUNNY_DAY    ; SUNFLORA
 	db NO_MOVE      ; YANMA
 	db NO_MOVE      ; WOOPER
 	db NO_MOVE      ; QUAGSIRE
