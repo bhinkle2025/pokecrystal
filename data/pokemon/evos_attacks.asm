@@ -2144,13 +2144,17 @@ TotodileEvosAttacks:
 	db 0 ; no more evolutions
 	db 1, SCRATCH
 	db 1, LEER
-	db 7, RAGE
-	db 13, WATER_GUN
-	db 20, BITE
-	db 27, SCARY_FACE
-	db 35, SLASH
-	db 43, SCREECH
-	db 52, HYDRO_PUMP
+	db 6, WATER_GUN
+	db 8, RAGE
+	db 13, BITE
+	db 15, SCARY_FACE
+	db 20, ANCIENTPOWER
+	db 27, CRUNCH
+	db 34, SLASH
+	db 36, SCREECH
+	db 41, THRASH
+	db 48, SUBMISSION
+	db 50, HYDRO_PUMP
 	db 0 ; no more level-up moves
 
 CroconawEvosAttacks:
@@ -2158,29 +2162,38 @@ CroconawEvosAttacks:
 	db 0 ; no more evolutions
 	db 1, SCRATCH
 	db 1, LEER
+	db 1, WATER_GUN
 	db 1, RAGE
-	db 7, RAGE
-	db 13, WATER_GUN
-	db 21, BITE
-	db 28, SCARY_FACE
-	db 37, SLASH
-	db 45, SCREECH
-	db 55, HYDRO_PUMP
+	db 6, WATER_GUN
+	db 8, RAGE
+	db 13, BITE
+	db 15, SCARY_FACE
+	db 20, ANCIENTPOWER
+	db 27, CRUNCH
+	db 34, SLASH
+	db 36, SCREECH
+	db 41, THRASH
+	db 48, SUBMISSION
+	db 50, HYDRO_PUMP
 	db 0 ; no more level-up moves
 
 FeraligatrEvosAttacks:
 	db 0 ; no more evolutions
 	db 1, SCRATCH
 	db 1, LEER
-	db 1, RAGE
 	db 1, WATER_GUN
-	db 7, RAGE
-	db 13, WATER_GUN
-	db 21, BITE
-	db 28, SCARY_FACE
-	db 38, SLASH
-	db 47, SCREECH
-	db 58, HYDRO_PUMP
+	db 1, RAGE
+	db 6, WATER_GUN
+	db 8, RAGE
+	db 13, BITE
+	db 15, SCARY_FACE
+	db 20, ANCIENTPOWER
+	db 27, CRUNCH
+	db 34, SLASH
+	db 36, SCREECH
+	db 41, THRASH
+	db 48, SUBMISSION
+	db 50, HYDRO_PUMP
 	db 0 ; no more level-up moves
 
 SentretEvosAttacks:
@@ -2396,12 +2409,15 @@ TogepiEvosAttacks:
 	db EVOLVE_HAPPINESS, TR_ANYTIME, TOGETIC
 	db 0 ; no more evolutions
 	db 1, GROWL
-	db 1, CHARM
-	db 7, METRONOME
-	db 18, SWEET_KISS
-	db 25, ENCORE
+	db 1, POUND
+	db 5, METRONOME
+	db 9, SWEET_KISS
+	db 12, CHARM
+	db 16, ANCIENTPOWER
+	db 17, ENCORE
 	db 31, SAFEGUARD
 	db 38, DOUBLE_EDGE
+	db 41, BATON_PASS
 	db 0 ; no more level-up moves
 
 TogeticEvosAttacks:
@@ -2409,12 +2425,15 @@ TogeticEvosAttacks:
 	db 1, GROWL
 	db 1, CHARM
 	db 1, FAIRY_WIND
-	db 7, METRONOME
-	db 18, SWEET_KISS
-	db 20, ENCORE
+	db 5, METRONOME
+	db 9, SWEET_KISS
+	db 12, CHARM
+	db 16, ANCIENTPOWER
+	db 17, ENCORE
 	db 25, AIR_SLASH
 	db 31, SAFEGUARD
 	db 38, DOUBLE_EDGE
+	db 41, BATON_PASS
 	db 0 ; no more level-up moves
 
 NatuEvosAttacks:
@@ -2446,9 +2465,11 @@ MareepEvosAttacks:
 	db 0 ; no more evolutions
 	db 1, TACKLE
 	db 1, GROWL
-	db 9, THUNDERSHOCK
-	db 16, THUNDER_WAVE
-	db 23, COTTON_SPORE
+	db 4, THUNDER_WAVE
+	db 8, THUNDERSHOCK
+	db 11, COTTON_SPORE
+	db 18, CURSE
+	db 25, CONFUSE_RAY
 	db 30, LIGHT_SCREEN
 	db 37, THUNDER
 	db 39, DAZZLE
@@ -2460,12 +2481,14 @@ FlaaffyEvosAttacks:
 	db 1, TACKLE
 	db 1, GROWL
 	db 1, THUNDERSHOCK
-	db 9, THUNDERSHOCK
-	db 18, THUNDER_WAVE
-	db 27, COTTON_SPORE
-	db 36, LIGHT_SCREEN
+	db 4, THUNDER_WAVE
+	db 8, THUNDERSHOCK
+	db 11, COTTON_SPORE
+	db 18, CURSE
+	db 25, CONFUSE_RAY
+	db 30, LIGHT_SCREEN
+	db 37, THUNDER
 	db 39, DAZZLE
-	db 45, THUNDER
 	db 0 ; no more level-up moves
 
 AmpharosEvosAttacks:
@@ -2474,13 +2497,15 @@ AmpharosEvosAttacks:
 	db 1, GROWL
 	db 1, THUNDERSHOCK
 	db 1, THUNDER_WAVE
-	db 9, THUNDERSHOCK
-	db 18, THUNDER_WAVE
-	db 27, COTTON_SPORE
+	db 4, THUNDER_WAVE
+	db 8, THUNDERSHOCK
+	db 11, COTTON_SPORE
+	db 18, CURSE
+	db 25, CONFUSE_RAY
 	db 29, THUNDERPUNCH
+	db 30, LIGHT_SCREEN
+	db 37, THUNDER
 	db 39, DAZZLE
-	db 42, LIGHT_SCREEN
-	db 57, THUNDER
 	db 0 ; no more level-up moves
 
 BellossomEvosAttacks:
