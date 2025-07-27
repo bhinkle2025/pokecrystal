@@ -26,7 +26,7 @@ Moves:
 	move SCRATCH,      EFFECT_NORMAL_HIT,         40, NORMAL,       PHYSICAL, 100, 35,   0
 	move VICEGRIP,     EFFECT_NORMAL_HIT,         55, NORMAL,       PHYSICAL, 100, 30,   0
 	move PLAY_ROUGH,   EFFECT_ATTACK_DOWN_HIT,    90, FAIRY,        PHYSICAL,  90, 10,  10
-	move DAZZLE,       EFFECT_NORMAL_HIT,         80, FAIRY,       SPECIAL,  100, 10,   0
+	move DAZZLE,       EFFECT_NORMAL_HIT,         80, FAIRY,        SPECIAL,  100, 10,   0
 	move SWORDS_DANCE, EFFECT_ATTACK_UP_2,         0, NORMAL,       STATUS,   100, 30,   0
 	move CUT,          EFFECT_NORMAL_HIT,         80, BUG,          PHYSICAL, 100, 15,   0
 	move GUST,         EFFECT_GUST,               40, FLYING,       SPECIAL,  100, 35,   0
@@ -147,7 +147,7 @@ Moves:
 	move SPIKE_CANNON, EFFECT_MULTI_HIT,          20, NORMAL,       PHYSICAL, 100, 15,   0
 	move CONSTRICT,    EFFECT_SPEED_DOWN_HIT,     10, NORMAL,       PHYSICAL, 100, 35,  10
 	move AMNESIA,      EFFECT_SP_DEF_UP_2,         0, PSYCHIC_TYPE, SPECIAL,  100, 20,   0
-	move KINESIS,      EFFECT_ACCURACY_DOWN,       0, PSYCHIC_TYPE, STATUS,    80, 15,   0
+	move BUG_BUZZ,     EFFECT_SP_DEF_DOWN_HIT,    90, BUG,          SPECIAL,  100, 10,  10
 	move SOFTBOILED,   EFFECT_HEAL,                0, NORMAL,       STATUS,   100, 10,   0
 	move HI_JUMP_KICK, EFFECT_JUMP_KICK,         130, FIGHTING,     PHYSICAL,  90, 10,   0
 	move GLARE,        EFFECT_PARALYZE,            0, NORMAL,       STATUS,   100, 30,   0

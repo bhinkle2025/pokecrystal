@@ -134,7 +134,7 @@ MoveDescriptions::
 	dw SpikeCannonDescription
 	dw ConstrictDescription
 	dw AmnesiaDescription
-	dw KinesisDescription
+	dw BugBuzzDescription
 	dw SoftboiledDescription
 	dw HiJumpKickDescription
 	dw GlareDescription
@@ -799,9 +799,9 @@ AmnesiaDescription:
 	db   "Sharply raises the"
 	next "user's SPCL.DEF.@"
 
-KinesisDescription:
-	db   "Reduces the foe's"
-	next "accuracy.@"
+BugBuzzDescription:
+	db   "A harsh buzzing"
+	next "sound hits the foe.@"
 
 SoftboiledDescription:
 	db   "Restores HP by 1/2"

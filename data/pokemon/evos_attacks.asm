@@ -190,6 +190,7 @@ ButterfreeEvosAttacks:
 	db 18, SUPERSONIC
 	db 23, WHIRLWIND
 	db 28, AIR_SLASH
+	db 32, BUG_BUZZ
 	db 34, PSYBEAM
 	db 40, SAFEGUARD
 	db 0 ; no more level-up moves
@@ -630,6 +631,7 @@ VenonatEvosAttacks:
 	db 17, CONFUSION
 	db 20, POISONPOWDER
 	db 25, LEECH_LIFE
+	db 25, BUG_BUZZ
 	db 28, STUN_SPORE
 	db 33, PSYBEAM
 	db 36, SLEEP_POWDER
@@ -646,6 +648,7 @@ VenomothEvosAttacks:
 	db 17, CONFUSION
 	db 20, POISONPOWDER
 	db 25, LEECH_LIFE
+	db 25, BUG_BUZZ
 	db 28, STUN_SPORE
 	db 30, GUST
 	db 36, PSYBEAM
@@ -841,9 +844,7 @@ KadabraEvosAttacks:
 	db EVOLVE_LEVEL, 42, ALAKAZAM
 	db 0 ; no more evolutions
 	db 1, TELEPORT
-	db 1, KINESIS
 	db 1, CONFUSION
-	db 16, CONFUSION
 	db 18, DISABLE
 	db 21, PSYBEAM
 	db 26, RECOVER
@@ -855,7 +856,6 @@ KadabraEvosAttacks:
 AlakazamEvosAttacks:
 	db 0 ; no more evolutions
 	db 1, TELEPORT
-	db 1, KINESIS
 	db 1, CONFUSION
 	db 16, CONFUSION
 	db 18, DISABLE
@@ -1669,6 +1669,7 @@ MrMimeEvosAttacks:
 	db 26, LIGHT_SCREEN
 	db 26, REFLECT
 	db 31, ENCORE
+	db 32, DAZZLE
 	db 36, PSYBEAM
 	db 41, BATON_PASS
 	db 46, SAFEGUARD
@@ -2267,6 +2268,7 @@ LedybaEvosAttacks:
 	db 24, COMET_PUNCH
 	db 22, SAFEGUARD
 	db 29, BATON_PASS
+	db 33, BUG_BUZZ
 	db 36, SWIFT
 	db 43, AGILITY
 	db 50, DOUBLE_EDGE
@@ -2282,6 +2284,7 @@ LedianEvosAttacks:
 	db 12, REFLECT
 	db 24, COMET_PUNCH
 	db 24, SAFEGUARD
+	db 33, BUG_BUZZ
 	db 33, BATON_PASS
 	db 42, SWIFT
 	db 51, AGILITY
@@ -2449,6 +2452,7 @@ MareepEvosAttacks:
 	db 23, COTTON_SPORE
 	db 30, LIGHT_SCREEN
 	db 37, THUNDER
+	db 39, DAZZLE
 	db 0 ; no more level-up moves
 
 FlaaffyEvosAttacks:
@@ -2461,6 +2465,7 @@ FlaaffyEvosAttacks:
 	db 18, THUNDER_WAVE
 	db 27, COTTON_SPORE
 	db 36, LIGHT_SCREEN
+	db 39, DAZZLE
 	db 45, THUNDER
 	db 0 ; no more level-up moves
 
@@ -2474,6 +2479,7 @@ AmpharosEvosAttacks:
 	db 18, THUNDER_WAVE
 	db 27, COTTON_SPORE
 	db 29, THUNDERPUNCH
+	db 39, DAZZLE
 	db 42, LIGHT_SCREEN
 	db 57, THUNDER
 	db 0 ; no more level-up moves
@@ -2644,6 +2650,7 @@ YanmaEvosAttacks:
 	db 37, WING_ATTACK
 	db 43, SCREECH
 	db 45, AIR_SLASH
+	db 48, BUG_BUZZ
 	db 0 ; no more level-up moves
 
 WooperEvosAttacks:

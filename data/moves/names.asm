@@ -133,7 +133,7 @@ MoveNames::
 	li "SPIKE CANNON"
 	li "CONSTRICT"
 	li "AMNESIA"
-	li "KINESIS"
+	li "BUG BUZZ"
 	li "SOFTBOILED"
 	li "HI JUMP KICK"
 	li "GLARE"
