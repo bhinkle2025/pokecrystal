@@ -6,7 +6,6 @@ StallMoves:
 	db TAIL_WHIP
 	db LEER
 	db GROWL
-	db DISABLE
 	db MIST
 	db COUNTER
 	db LEECH_SEED

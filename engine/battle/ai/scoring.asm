@@ -338,7 +338,6 @@ AI_Smart_EffectHandlers:
 	dbw EFFECT_RAGE,             AI_Smart_Rage
 	dbw EFFECT_MIMIC,            AI_Smart_Mimic
 	dbw EFFECT_LEECH_SEED,       AI_Smart_LeechSeed
-	dbw EFFECT_DISABLE,          AI_Smart_Disable
 	dbw EFFECT_COUNTER,          AI_Smart_Counter
 	dbw EFFECT_ENCORE,           AI_Smart_Encore
 	dbw EFFECT_PAIN_SPLIT,       AI_Smart_PainSplit
@@ -1671,37 +1670,6 @@ AI_Smart_Conversion2:
 .discourage
 	call Random
 	cp 10 percent
-	ret c
-	inc [hl]
-	ret
-
-AI_Smart_Disable:
-	call AICompareSpeed
-	jr nc, .discourage
-
-	push hl
-	ld a, [wLastPlayerCounterMove]
-	ld hl, UsefulMoves
-	ld de, 1
-	call IsInArray
-
-	pop hl
-	jr nc, .notencourage
-
-	call Random
-	cp 39 percent + 1
-	ret c
-	dec [hl]
-	ret
-
-.notencourage
-	ld a, [wEnemyMoveStruct + MOVE_POWER]
-	and a
-	ret nz
-
-.discourage
-	call Random
-	cp 8 percent
 	ret c
 	inc [hl]
 	ret

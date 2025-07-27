@@ -76,7 +76,6 @@ SandshrewEggMoves:
 
 NidoranFEggMoves:
 	db SUPERSONIC
-	db DISABLE
 	db FOCUS_ENERGY
 	db CHARM
 	db COUNTER
@@ -85,7 +84,6 @@ NidoranFEggMoves:
 
 NidoranMEggMoves:
 	db SUPERSONIC
-	db DISABLE
 	db CONFUSION
 	db AMNESIA
 	db COUNTER
@@ -97,7 +95,6 @@ VulpixEggMoves:
 	db HYPNOSIS
 	db FLAIL
 	db HEX
-	db DISABLE
 	db -1 ; end
 
 ZubatEggMoves:
@@ -250,7 +247,6 @@ DoduoEggMoves:
 SeelEggMoves:
 	db LICK
 	db PERISH_SONG
-	db DISABLE
 	db PECK
 	db SLAM
 	db ENCORE
@@ -354,14 +350,12 @@ KangaskhanEggMoves:
 	db FORESIGHT
 	db FOCUS_ENERGY
 	db SAFEGUARD
-	db DISABLE
 	db -1 ; end
 
 HorseaEggMoves:
 	db FLAIL
 	db AURORA_BEAM
 	db OCTAZOOKA
-	db DISABLE
 	db SPLASH
 	db DRAGON_RAGE
 	db -1 ; end
@@ -485,7 +479,6 @@ LedybaEggMoves:
 
 SpinarakEggMoves:
 	db PSYBEAM
-	db DISABLE
 	db SONICBOOM
 	db BATON_PASS
 	db PURSUIT
@@ -745,7 +738,6 @@ PhanpyEggMoves:
 StantlerEggMoves:
 	db REFLECT
 	db HEX
-	db DISABLE
 	db LIGHT_SCREEN
 	db BITE
 	db -1 ; end

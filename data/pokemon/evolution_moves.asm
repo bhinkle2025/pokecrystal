@@ -64,7 +64,7 @@ EvolutionMoves::
 	db SUBMISSION   ; POLIWRATH
 	db NO_MOVE      ; ABRA
 	db CONFUSION    ; KADABRA
-	db NO_MOVE      ; ALAKAZAM
+	db FOCUS_BLAST  ; ALAKAZAM
 	db NO_MOVE      ; MACHOP
 	db NO_MOVE      ; MACHOKE
 	db CROSS_CHOP   ; MACHAMP

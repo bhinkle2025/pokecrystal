@@ -5,7 +5,6 @@ EncoreMoves:
 	db WHIRLWIND
 	db LEER
 	db ROAR
-	db DISABLE
 	db MIST
 	db LEECH_SEED
 	db GROWTH

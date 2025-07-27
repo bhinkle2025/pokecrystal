@@ -513,7 +513,6 @@ JigglypuffEvosAttacks:
 	db 1, SING
 	db 4, DEFENSE_CURL
 	db 9, POUND
-	db 14, DISABLE
 	db 19, ROLLOUT
 	db 24, DOUBLESLAP
 	db 29, REST
@@ -524,7 +523,6 @@ JigglypuffEvosAttacks:
 WigglytuffEvosAttacks:
 	db 0 ; no more evolutions
 	db 1, SING
-	db 1, DISABLE
 	db 1, DEFENSE_CURL
 	db 1, DOUBLESLAP
 	db 0 ; no more level-up moves
@@ -625,7 +623,6 @@ VenonatEvosAttacks:
 	db EVOLVE_LEVEL, 31, VENOMOTH
 	db 0 ; no more evolutions
 	db 1, TACKLE
-	db 1, DISABLE
 	db 1, FORESIGHT
 	db 9, SUPERSONIC
 	db 17, CONFUSION
@@ -641,7 +638,6 @@ VenonatEvosAttacks:
 VenomothEvosAttacks:
 	db 0 ; no more evolutions
 	db 1, TACKLE
-	db 1, DISABLE
 	db 1, FORESIGHT
 	db 1, SUPERSONIC
 	db 9, SUPERSONIC
@@ -720,7 +716,6 @@ PsyduckEvosAttacks:
 	db 0 ; no more evolutions
 	db 1, SCRATCH
 	db 5, TAIL_WHIP
-	db 10, DISABLE
 	db 16, CONFUSION
 	db 23, SCREECH
 	db 31, PSYCH_UP
@@ -732,10 +727,8 @@ GolduckEvosAttacks:
 	db 0 ; no more evolutions
 	db 1, SCRATCH
 	db 1, TAIL_WHIP
-	db 1, DISABLE
 	db 1, CONFUSION
 	db 5, TAIL_WHIP
-	db 10, DISABLE
 	db 16, CONFUSION
 	db 23, SCREECH
 	db 31, PSYCH_UP
@@ -845,7 +838,6 @@ KadabraEvosAttacks:
 	db 0 ; no more evolutions
 	db 1, TELEPORT
 	db 1, CONFUSION
-	db 18, DISABLE
 	db 21, PSYBEAM
 	db 26, RECOVER
 	db 31, FUTURE_SIGHT
@@ -858,7 +850,6 @@ AlakazamEvosAttacks:
 	db 1, TELEPORT
 	db 1, CONFUSION
 	db 16, CONFUSION
-	db 18, DISABLE
 	db 21, PSYBEAM
 	db 26, RECOVER
 	db 31, FUTURE_SIGHT
@@ -1068,7 +1059,6 @@ SlowpokeEvosAttacks:
 	db 6, GROWL
 	db 15, WATER_GUN
 	db 20, CONFUSION
-	db 29, DISABLE
 	db 34, HEADBUTT
 	db 43, AMNESIA
 	db 48, PSYCHIC_M
@@ -1083,7 +1073,6 @@ SlowbroEvosAttacks:
 	db 6, GROWL
 	db 15, WATER_GUN
 	db 20, CONFUSION
-	db 29, DISABLE
 	db 34, HEADBUTT
 	db 36, WITHDRAW
 	db 46, AMNESIA
@@ -1192,7 +1181,6 @@ GrimerEvosAttacks:
 	db 1, POISON_GAS
 	db 1, POUND
 	db 5, HARDEN
-	db 10, DISABLE
 	db 16, SLUDGE
 	db 23, MINIMIZE
 	db 31, SCREECH
@@ -1207,7 +1195,6 @@ MukEvosAttacks:
 	db 1, POUND
 	db 1, HARDEN
 	db 33, HARDEN
-	db 37, DISABLE
 	db 45, SLUDGE
 	db 23, MINIMIZE
 	db 31, SCREECH
@@ -1297,7 +1284,6 @@ DrowzeeEvosAttacks:
 	db 0 ; no more evolutions
 	db 1, POUND
 	db 1, HYPNOSIS
-	db 10, DISABLE
 	db 18, CONFUSION
 	db 25, HEADBUTT
 	db 31, POISON_GAS
@@ -1312,9 +1298,7 @@ HypnoEvosAttacks:
 	db 0 ; no more evolutions
 	db 1, POUND
 	db 1, HYPNOSIS
-	db 1, DISABLE
 	db 1, CONFUSION
-	db 10, DISABLE
 	db 18, CONFUSION
 	db 25, HEADBUTT
 	db 33, POISON_GAS
@@ -1476,7 +1460,6 @@ LickitungEvosAttacks:
 	db 13, DEFENSE_CURL
 	db 19, STOMP
 	db 25, WRAP
-	db 31, DISABLE
 	db 37, SLAM
 	db 43, SCREECH
 	db 0 ; no more level-up moves
@@ -2041,7 +2024,6 @@ DragoniteEvosAttacks:
 MewtwoEvosAttacks:
 	db 0 ; no more evolutions
 	db 1, CONFUSION
-	db 1, DISABLE
 	db 11, BARRIER
 	db 22, SWIFT
 	db 33, PSYCH_UP
@@ -2723,7 +2705,6 @@ SlowkingEvosAttacks:
 	db 6, GROWL
 	db 15, WATER_GUN
 	db 20, CONFUSION
-	db 29, DISABLE
 	db 34, HEADBUTT
 	db 39, NASTY_PLOT
 	db 43, SWAGGER

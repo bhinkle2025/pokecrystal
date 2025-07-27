@@ -51,7 +51,7 @@ BattleAnimations::
 	dw BattleAnim_Sing
 	dw BattleAnim_Supersonic
 	dw BattleAnim_Sonicboom
-	dw BattleAnim_Disable
+	dw BattleAnim_FocusBlast
 	dw BattleAnim_Acid
 	dw BattleAnim_Ember
 	dw BattleAnim_Flamethrower
@@ -1454,6 +1454,7 @@ BattleAnim_StunSpore:
 	anim_wait 96
 	anim_ret
 
+BattleAnim_FocusBlast:
 BattleAnim_HyperBeam:
 	anim_1gfx BATTLE_ANIM_GFX_BEAM
 	anim_bgeffect BATTLE_BG_EFFECT_SHAKE_SCREEN_X, $30, $4, $10
@@ -3022,17 +3023,6 @@ BattleAnim_Slam:
 	anim_bgeffect BATTLE_BG_EFFECT_FLASH_INVERTED, $0, $8, $2
 	anim_obj BATTLE_ANIM_OBJ_HIT_YFIX, 124, 40, $0
 	anim_wait 16
-	anim_ret
-
-BattleAnim_Disable:
-	anim_2gfx BATTLE_ANIM_GFX_LIGHTNING, BATTLE_ANIM_GFX_STATUS
-	anim_bgeffect BATTLE_BG_EFFECT_CYCLE_OBPALS_GRAY_AND_YELLOW, $0, $2, $0
-	anim_obj BATTLE_ANIM_OBJ_DISABLE, 132, 56, $0
-	anim_wait 16
-	anim_sound 0, 1, SFX_BIND
-	anim_obj BATTLE_ANIM_OBJ_PARALYZED, 104, 56, $42
-	anim_obj BATTLE_ANIM_OBJ_PARALYZED, 160, 56, $c2
-	anim_wait 96
 	anim_ret
 
 BattleAnim_TailWhip:

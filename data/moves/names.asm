@@ -49,7 +49,7 @@ MoveNames::
 	li "SING"
 	li "SUPERSONIC"
 	li "SONICBOOM"
-	li "DISABLE"
+	li "FOCUS BLAST"
 	li "ACID"
 	li "EMBER"
 	li "FLAMETHROWER"

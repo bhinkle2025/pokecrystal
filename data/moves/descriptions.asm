@@ -50,7 +50,7 @@ MoveDescriptions::
 	dw SingDescription
 	dw SupersonicDescription
 	dw SonicboomDescription
-	dw DisableDescription
+	dw FocusBlastDescription
 	dw AcidDescription
 	dw EmberDescription
 	dw FlamethrowerDescription
@@ -463,9 +463,9 @@ SonicboomDescription:
 	db   "Always inflicts"
 	next "20HP damage.@"
 
-DisableDescription:
-	db   "Disables the foe's"
-	next "most recent move.@"
+FocusBlastDescription:
+	db   "A strong mental"
+	next "blast strikes hard.@"
 
 AcidDescription:
 	db   "An attack that may"
