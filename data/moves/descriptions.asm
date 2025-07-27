@@ -13,7 +13,7 @@ MoveDescriptions::
 	dw ScratchDescription
 	dw VicegripDescription
 	dw PlayRoughDescription
-	dw RazorWindDescription
+	dw DazzleDescription
 	dw SwordsDanceDescription
 	dw CutDescription
 	dw GustDescription
@@ -314,9 +314,10 @@ PlayRoughDescription:
 db   "Rough, playful hit"
 next "that may lower Atk.@"
 
-RazorWindDescription:
-	db   "1st turn: Prepare"
-	next "2nd turn: Attack@"
+DazzleDescription:
+	db   "A flash of light"
+	next "strikes the foe.@"
+
 
 SwordsDanceDescription:
 	db   "A dance that in-"

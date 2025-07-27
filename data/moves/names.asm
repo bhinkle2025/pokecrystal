@@ -12,7 +12,7 @@ MoveNames::
 	li "SCRATCH"
 	li "VICEGRIP"
 	li "PLAY ROUGH"
-	li "RAZOR WIND"
+	li "DAZZLE"
 	li "SWORDS DANCE"
 	li "CUT"
 	li "GUST"

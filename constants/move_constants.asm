@@ -18,7 +18,7 @@
 	const SCRATCH      ; 0a
 	const VICEGRIP     ; 0b
 	const PLAY_ROUGH   ; 0c
-	const RAZOR_WIND   ; 0d
+	const DAZZLE       ; 0d
 	const SWORDS_DANCE ; 0e
 	const CUT          ; 0f
 	const GUST         ; 10
