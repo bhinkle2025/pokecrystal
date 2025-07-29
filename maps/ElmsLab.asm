@@ -87,13 +87,35 @@ ElmsLabWalkUpToElmScript:
 	closetext
 	end
 
+
 ProfElmScript:
 	faceplayer
 	opentext
+
+	; Check for final starter eligibility FIRST
+	checkevent EVENT_ELM_GAVE_FINAL_STARTER
+	iftrue .AfterFinalStarterCheck
+
+	readvar VAR_DEXCAUGHT
+	ifgreater 100, .GiveFinalStarter
+	sjump .AfterFinalStarterCheck
+
+.GiveFinalStarter:
+	setevent EVENT_CAN_TAKE_FINAL_STARTER
+	writetext ElmFinalStarterIntroText
+	waitbutton
+	closetext
+	end
+
+.AfterFinalStarterCheck:
 	checkevent EVENT_GOT_SS_TICKET_FROM_ELM
 	iftrue ElmCheckMasterBall
 	checkevent EVENT_BEAT_ELITE_FOUR
 	iftrue ElmGiveTicketScript
+	closetext
+	end
+
+
 ElmCheckMasterBall:
 	checkevent EVENT_GOT_MASTER_BALL_FROM_ELM
 	iftrue ElmCheckEverstone
@@ -157,8 +179,13 @@ LabTryToLeaveScript:
 	end
 
 CyndaquilPokeBallScript:
+	checkevent EVENT_CAN_TAKE_FINAL_STARTER
+	iftrue .FinalStarter
+
+	; Original starter logic
 	checkevent EVENT_GOT_A_POKEMON_FROM_ELM
-	iftrue LookAtElmPokeBallScript
+	iftrue LookAtElmPokeBallScript 
+
 	turnobject ELMSLAB_ELM, DOWN
 	reanchormap
 	pokepic CYNDAQUIL
@@ -186,9 +213,37 @@ CyndaquilPokeBallScript:
 	applymovement PLAYER, AfterCyndaquilMovement
 	sjump ElmDirectionsScript
 
+.FinalStarter:
+	turnobject ELMSLAB_ELM, DOWN
+	reanchormap
+	pokepic CYNDAQUIL
+	cry CYNDAQUIL
+	waitbutton
+	closepokepic
+	opentext
+	writetext TakeCyndaquilText
+	yesorno
+	iffalse DidntTakeStarterScript
+	disappear ELMSLAB_POKE_BALL1
+	setevent EVENT_ELM_GAVE_FINAL_STARTER
+	waitsfx
+	getmonname STRING_BUFFER_3, CYNDAQUIL
+	writetext ReceivedStarterText
+	playsound SFX_CAUGHT_MON
+	waitsfx
+	promptbutton
+	givepoke CYNDAQUIL, 5, BERRY
+	closetext
+	end
+
 TotodilePokeBallScript:
+	checkevent EVENT_CAN_TAKE_FINAL_STARTER
+	iftrue .FinalStarter
+
+	; Original starter logic
 	checkevent EVENT_GOT_A_POKEMON_FROM_ELM
-	iftrue LookAtElmPokeBallScript
+	iftrue LookAtElmPokeBallScript 
+
 	turnobject ELMSLAB_ELM, DOWN
 	reanchormap
 	pokepic TOTODILE
@@ -214,9 +269,37 @@ TotodilePokeBallScript:
 	applymovement PLAYER, AfterTotodileMovement
 	sjump ElmDirectionsScript
 
+	.FinalStarter:
+	turnobject ELMSLAB_ELM, DOWN
+	reanchormap
+	pokepic TOTODILE
+	cry TOTODILE
+	waitbutton
+	closepokepic
+	opentext
+	writetext TakeTotodileText
+	yesorno
+	iffalse DidntTakeStarterScript
+	disappear ELMSLAB_POKE_BALL2
+	setevent EVENT_ELM_GAVE_FINAL_STARTER
+	waitsfx
+	getmonname STRING_BUFFER_3, TOTODILE
+	writetext ReceivedStarterText
+	playsound SFX_CAUGHT_MON
+	waitsfx
+	promptbutton
+	givepoke TOTODILE, 5, BERRY
+	closetext
+	end
+
 ChikoritaPokeBallScript:
+	checkevent EVENT_CAN_TAKE_FINAL_STARTER
+	iftrue .FinalStarter
+
+	; Original starter logic
 	checkevent EVENT_GOT_A_POKEMON_FROM_ELM
-	iftrue LookAtElmPokeBallScript
+	iftrue LookAtElmPokeBallScript 
+
 	turnobject ELMSLAB_ELM, DOWN
 	reanchormap
 	pokepic CHIKORITA
@@ -242,8 +325,38 @@ ChikoritaPokeBallScript:
 	applymovement PLAYER, AfterChikoritaMovement
 	sjump ElmDirectionsScript
 
+.FinalStarter:
+	turnobject ELMSLAB_ELM, DOWN
+	reanchormap
+	pokepic CHIKORITA
+	cry CHIKORITA
+	waitbutton
+	closepokepic
+	opentext
+	writetext TakeChikoritaText
+	yesorno
+	iffalse DidntTakeStarterScript
+	disappear ELMSLAB_POKE_BALL3
+	setevent EVENT_ELM_GAVE_FINAL_STARTER
+	waitsfx
+	getmonname STRING_BUFFER_3, CHIKORITA
+	writetext ReceivedStarterText
+	playsound SFX_CAUGHT_MON
+	waitsfx
+	promptbutton
+	givepoke CHIKORITA, 5, BERRY
+	closetext
+	end
+
 DidntChooseStarterScript:
 	writetext DidntChooseStarterText
+	waitbutton
+	closetext
+	end
+
+DidntTakeStarterScript:
+	opentext
+	writetext DidntTakeStarterText
 	waitbutton
 	closetext
 	end
@@ -1390,6 +1503,27 @@ AideText_GetPocketPCText:
 AideText_PocketPCInfoText:
 	text "Use this to manage"
 	line "your party."
+	done
+
+ElmFinalStarterIntroText:
+    text "There's one last"
+    line "#MON left."
+
+    para "It's waited long"
+    line "for a good home."
+
+    para "Would you like to"
+    line "take it?"
+    done
+
+DidntTakeStarterText:
+	text "I see."
+	line "It is a big"
+	cont "responsibility."
+
+	para "If you change" 
+	line "your mind,"
+	cont "it will be here."
 	done
 
 ElmsLab_MapEvents:
