@@ -116,7 +116,7 @@ MoveDescriptions::
 	dw LightScreenDescription
 	dw HazeDescription
 	dw ReflectDescription
-	dw FocusEnergyDescription
+	dw DragonClawDescription
 	dw BideDescription
 	dw MetronomeDescription
 	dw MirrorMoveDescription
@@ -727,9 +727,9 @@ ReflectDescription:
 	db   "Raises DEFENSE"
 	next "with a barrier.@"
 
-FocusEnergyDescription:
-	db   "Raises the criti-"
-	next "cal hit ratio.@"
+DragonClawDescription:
+	db   "Slashes with sharp"
+	next "dragon claws.@"
 
 BideDescription:
 	db   "Waits 2-3 turns &"

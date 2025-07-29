@@ -115,7 +115,7 @@ MoveNames::
 	li "LIGHT SCREEN"
 	li "HAZE"
 	li "REFLECT"
-	li "FOCUS ENERGY"
+	li "DRAGON CLAW"
 	li "BIDE"
 	li "METRONOME"
 	li "MIRROR MOVE"

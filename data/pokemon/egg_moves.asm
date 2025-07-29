@@ -76,7 +76,6 @@ SandshrewEggMoves:
 
 NidoranFEggMoves:
 	db SUPERSONIC
-	db FOCUS_ENERGY
 	db CHARM
 	db COUNTER
 	db BEAT_UP
@@ -348,7 +347,6 @@ TangelaEggMoves:
 KangaskhanEggMoves:
 	db STOMP
 	db FORESIGHT
-	db FOCUS_ENERGY
 	db SAFEGUARD
 	db -1 ; end
 
@@ -458,7 +456,6 @@ SentretEggMoves:
 	db DOUBLE_EDGE
 	db PURSUIT
 	db SLASH
-	db FOCUS_ENERGY
 	db REVERSAL
 	db -1 ; end
 
@@ -664,7 +661,6 @@ SneaselEggMoves:
 TeddiursaEggMoves:
 	db CRUNCH
 	db SEISMIC_TOSS
-	db FOCUS_ENERGY
 	db COUNTER
 	db METAL_CLAW
 	db -1 ; end
@@ -729,7 +725,6 @@ HoundourEggMoves:
 	db -1 ; end
 
 PhanpyEggMoves:
-	db FOCUS_ENERGY
 	db BODY_SLAM
 	db ANCIENTPOWER
 	db WATER_GUN
@@ -779,7 +774,6 @@ LarvitarEggMoves:
 	db PURSUIT
 	db STOMP
 	db OUTRAGE
-	db FOCUS_ENERGY
 	db ANCIENTPOWER
 	db -1 ; end
 

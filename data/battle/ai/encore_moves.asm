@@ -15,7 +15,6 @@ EncoreMoves:
 	db TELEPORT
 	db SCREECH
 	db HAZE
-	db FOCUS_ENERGY
 	db DREAM_EATER
 	db POISON_GAS
 	db SPLASH
