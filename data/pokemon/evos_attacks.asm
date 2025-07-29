@@ -2505,30 +2505,31 @@ MarillEvosAttacks:
 	db EVOLVE_LEVEL, 18, AZUMARILL
 	db 0 ; no more evolutions
 	db 1, TACKLE
-	db 3, DEFENSE_CURL
+	db 1, WATER_GUN
 	db 6, TAIL_WHIP
-	db 10, WATER_GUN
-	db 15, ROLLOUT
-	db 18, BUBBLEBEAM
+	db 10, DEFENSE_CURL
+	db 10, ROLLOUT
+	db 13, BUBBLEBEAM
 	db 21, PLAY_ROUGH
 	db 28, DOUBLE_EDGE
-	db 36, RAIN_DANCE
+	db 33, RAIN_DANCE
+	db 40, SUBMISSION
+	db 47, HYDRO_PUMP
 	db 0 ; no more level-up moves
 
 AzumarillEvosAttacks:
 	db 0 ; no more evolutions
 	db 1, TACKLE
-	db 1, DEFENSE_CURL
-	db 1, TAIL_WHIP
 	db 1, WATER_GUN
-	db 3, DEFENSE_CURL
 	db 6, TAIL_WHIP
-	db 10, WATER_GUN
-	db 15, ROLLOUT
-	db 21, BUBBLEBEAM
-	db 25, PLAY_ROUGH
-	db 36, DOUBLE_EDGE
-	db 48, RAIN_DANCE
+	db 10, DEFENSE_CURL
+	db 10, ROLLOUT
+	db 13, BUBBLEBEAM
+	db 21, PLAY_ROUGH
+	db 28, DOUBLE_EDGE
+	db 33, RAIN_DANCE
+	db 40, SUBMISSION
+	db 47, HYDRO_PUMP
 	db 0 ; no more level-up moves
 
 SudowoodoEvosAttacks:
@@ -2537,9 +2538,10 @@ SudowoodoEvosAttacks:
 	db 1, MIMIC
 	db 10, FLAIL
 	db 19, LOW_KICK
-	db 28, ROCK_SLIDE
-	db 37, FAINT_ATTACK
-	db 46, SLAM
+	db 26, ROCK_SLIDE
+	db 29, FAINT_ATTACK
+	db 33, COUNTER
+	db 36, DOUBLE_EDGE
 	db 0 ; no more level-up moves
 
 PolitoedEvosAttacks:
@@ -2555,56 +2557,56 @@ HoppipEvosAttacks:
 	db EVOLVE_LEVEL, 18, SKIPLOOM
 	db 0 ; no more evolutions
 	db 1, SPLASH
+	db 1, TACKLE
 	db 5, SYNTHESIS
 	db 5, TAIL_WHIP
-	db 10, TACKLE
-	db 10, FAIRY_WIND
+	db 6, ABSORB
+	db 8, FAIRY_WIND
+	db 10, POISONPOWDER
+	db 10, STUN_SPORE
+	db 10, SLEEP_POWDER
 	db 12, GUST
-	db 13, POISONPOWDER
-	db 15, STUN_SPORE
-	db 17, SLEEP_POWDER
-	db 20, LEECH_SEED
+	db 19, LEECH_SEED
+	db 22, MEGA_DRAIN
 	db 25, COTTON_SPORE
-	db 30, MEGA_DRAIN
+	db 32, GIGA_DRAIN
 	db 0 ; no more level-up moves
 
 SkiploomEvosAttacks:
 	db EVOLVE_LEVEL, 27, JUMPLUFF
 	db 0 ; no more evolutions
 	db 1, SPLASH
-	db 1, SYNTHESIS
-	db 1, TAIL_WHIP
 	db 1, TACKLE
 	db 5, SYNTHESIS
 	db 5, TAIL_WHIP
-	db 10, TACKLE
-	db 10, FAIRY_WIND
+	db 6, ABSORB
+	db 8, FAIRY_WIND
+	db 10, POISONPOWDER
+	db 10, STUN_SPORE
+	db 10, SLEEP_POWDER
 	db 12, GUST
-	db 13, POISONPOWDER
-	db 15, STUN_SPORE
-	db 17, SLEEP_POWDER
-	db 22, LEECH_SEED
-	db 29, COTTON_SPORE
-	db 36, MEGA_DRAIN
+	db 19, LEECH_SEED
+	db 22, MEGA_DRAIN
+	db 25, COTTON_SPORE
+	db 32, GIGA_DRAIN
 	db 0 ; no more level-up moves
 
 JumpluffEvosAttacks:
 	db 0 ; no more evolutions
 	db 1, SPLASH
-	db 1, SYNTHESIS
-	db 1, TAIL_WHIP
 	db 1, TACKLE
-	db 5, SYNTHESIS
 	db 5, TAIL_WHIP
-	db 10, TACKLE
-	db 10, FAIRY_WIND
+	db 6, ABSORB
+	db 8, FAIRY_WIND
+	db 10, POISONPOWDER
+	db 10, STUN_SPORE
+	db 10, SLEEP_POWDER
 	db 12, GUST
-	db 13, POISONPOWDER
-	db 15, STUN_SPORE
-	db 17, SLEEP_POWDER
-	db 22, LEECH_SEED
-	db 33, COTTON_SPORE
-	db 44, MEGA_DRAIN
+	db 15, SYNTHESIS
+	db 19, LEECH_SEED
+	db 22, MEGA_DRAIN
+	db 25, COTTON_SPORE
+	db 32, GIGA_DRAIN
 	db 0 ; no more level-up moves
 
 AipomEvosAttacks:
