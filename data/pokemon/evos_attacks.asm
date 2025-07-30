@@ -2425,11 +2425,11 @@ NatuEvosAttacks:
 	db 0 ; no more evolutions
 	db 1, PECK
 	db 1, LEER
-	db 10, SHADOW_SNEAK
-	db 20, TELEPORT
+	db 6, SHADOW_SNEAK
+	db 9, TELEPORT
+	db 23, CONFUSE_RAY
 	db 30, FUTURE_SIGHT
-	db 40, CONFUSE_RAY
-	db 50, PSYCHIC_M
+	db 33, PSYCHIC_M
 	db 0 ; no more level-up moves
 
 XatuEvosAttacks:
@@ -2437,11 +2437,12 @@ XatuEvosAttacks:
 	db 1, PECK
 	db 1, LEER
 	db 1, SHADOW_SNEAK
-	db 10, SHADOW_SNEAK
-	db 20, TELEPORT
-	db 35, FUTURE_SIGHT
-	db 50, CONFUSE_RAY
-	db 65, PSYCHIC_M
+	db 6, SHADOW_SNEAK
+	db 9, TELEPORT
+	db 23, CONFUSE_RAY
+	db 24, AIR_SLASH
+	db 30, FUTURE_SIGHT
+	db 33, PSYCHIC_M
 	db 0 ; no more level-up moves
 
 MareepEvosAttacks:
@@ -2630,8 +2631,8 @@ SunkernEvosAttacks:
 	db 1, ABSORB
 	db 4, GROWTH
 	db 10, MEGA_DRAIN
-	db 17, LEECH_SEED
-	db 17, RAZOR_LEAF
+	db 13, LEECH_SEED
+	db 16, RAZOR_LEAF
 	db 22, GIGA_DRAIN
 	db 28, SYNTHESIS
 	db 34, SOLARBEAM
@@ -2758,19 +2759,22 @@ MisdreavusEvosAttacks:
 	db 19, MEAN_LOOK
 	db 23, HEX
 	db 27, PSYBEAM
-	db 36, PAIN_SPLIT
-	db 42, SHADOW_BALL
+	db 32, PAIN_SPLIT
+	db 37, NASTY_PLOT
+	db 41, SHADOW_BALL
 	db 46, PERISH_SONG
 	db 0 ; no more level-up moves
 
 UnownEvosAttacks:
 	db 0 ; no more evolutions
 	db 1, HIDDEN_POWER
-	db 1, ANCIENTPOWER
-	db 1, AMNESIA
-	db 1, RECOVER
+	db 5, ANCIENTPOWER
+	db 10, CONFUSION
 	db 20, FUTURE_SIGHT
+	db 25, AMNESIA
+	db 30, NASTY_PLOT
 	db 35, PSYCHIC_M
+	db 40, RECOVER
 	db 0 ; no more level-up moves
 
 WobbuffetEvosAttacks:
@@ -2863,13 +2867,18 @@ SteelixEvosAttacks:
 	db 0 ; no more evolutions
 	db 1, TACKLE
 	db 1, SCREECH
-	db 10, BIND
-	db 14, ROCK_THROW
-	db 23, HARDEN
-	db 27, RAGE
-	db 36, SANDSTORM
-	db 40, SLAM
-	db 49, CRUNCH
+	db 1, BIND
+	db 1, HARDEN
+	db 7, ROCK_THROW
+	db 13, RAGE
+	db 16, CURSE
+	db 19, MAGNITUDE
+	db 22, ROCK_SLIDE
+	db 31, SANDSTORM
+	db 34, DIG
+	db 37, CRUNCH
+	db 40, IRON_TAIL
+	db 46, EARTHQUAKE
 	db 0 ; no more level-up moves
 
 SnubbullEvosAttacks:
@@ -2904,10 +2913,16 @@ QwilfishEvosAttacks:
 	db 1, SPIKES
 	db 1, TACKLE
 	db 1, POISON_STING
+	db 8, WATER_GUN
 	db 10, HARDEN
 	db 10, MINIMIZE
-	db 19, WATER_GUN
-	db 28, PIN_MISSILE
+	db 13, BUBBLE
+	db 17, ROLLOUT
+	db 21, TOXIC
+	db 24, BUBBLEBEAM
+	db 28, ACID
+	db 32, PIN_MISSILE
+	db 37, CURSE
 	db 46, HYDRO_PUMP
 	db 0 ; no more level-up moves
 
