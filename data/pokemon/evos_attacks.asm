@@ -2614,12 +2614,14 @@ AipomEvosAttacks:
 	db 1, SCRATCH
 	db 1, TAIL_WHIP
 	db 6, SAND_ATTACK
-	db 12, BATON_PASS
-	db 19, FURY_SWIPES
-	db 27, SWIFT
-	db 36, SCREECH
+	db 8, SHADOW_SNEAK
+	db 11, BATON_PASS
+	db 18, FURY_SWIPES
+	db 22, SWIFT
+	db 25, SCREECH
+	db 29, AGILITY
+	db 32, THIEF
 	db 39, NASTY_PLOT
-	db 46, AGILITY
 	db 0 ; no more level-up moves
 
 SunkernEvosAttacks:
@@ -2671,24 +2673,30 @@ WooperEvosAttacks:
 	db 0 ; no more evolutions
 	db 1, WATER_GUN
 	db 1, TAIL_WHIP
-	db 11, SLAM
+	db 4, RAIN_DANCE
+	db 8, MUD_SLAP
+	db 12, MIST
+	db 12, HAZE
+	db 14, BUBBLE
+	db 19, MAGNITUDE
 	db 21, AMNESIA
+	db 26, BUBBLEBEAM
 	db 31, EARTHQUAKE
-	db 41, RAIN_DANCE
-	db 51, MIST
-	db 51, HAZE
 	db 0 ; no more level-up moves
 
 QuagsireEvosAttacks:
 	db 0 ; no more evolutions
 	db 1, WATER_GUN
 	db 1, TAIL_WHIP
-	db 11, SLAM
-	db 23, AMNESIA
-	db 35, EARTHQUAKE
-	db 47, RAIN_DANCE
-	db 59, MIST
-	db 59, HAZE
+	db 4, RAIN_DANCE
+	db 8, MUD_SLAP
+	db 12, MIST
+	db 12, HAZE
+	db 14, BUBBLE
+	db 19, MAGNITUDE
+	db 21, AMNESIA
+	db 26, BUBBLEBEAM
+	db 31, EARTHQUAKE
 	db 0 ; no more level-up moves
 
 EspeonEvosAttacks:
@@ -2779,14 +2787,14 @@ GirafarigEvosAttacks:
 	db 1, GROWL
 	db 1, CONFUSION
 	db 1, STOMP
-	db 7, CONFUSION
+	db 5, CONFUSION
 	db 13, STOMP
+	db 19, PSYBEAM
 	db 20, AGILITY
 	db 30, BATON_PASS
-	db 41, PSYBEAM
+	db 37, CRUNCH
 	db 46, NASTY_PLOT
 	db 50, PSYCHIC_M
-	db 54, CRUNCH
 	db 0 ; no more level-up moves
 
 PinecoEvosAttacks:
@@ -2819,21 +2827,35 @@ ForretressEvosAttacks:
 DunsparceEvosAttacks:
 	db 0 ; no more evolutions
 	db 1, RAGE
-	db 5, DEFENSE_CURL
+	db 1, DEFENSE_CURL
+	db 3, ROLLOUT
+	db 6, HEX
 	db 13, GLARE
+	db 13, MUD_SLAP
+	db 18, ANCIENTPOWER
+	db 21, BODY_SLAM
 	db 26, PURSUIT
 	db 30, SCREECH
+	db 31, CURSE
+	db 33, DIG
+	db 38, DOUBLE_EDGE
+	db 43, AIR_SLASH
 	db 0 ; no more level-up moves
 
 GligarEvosAttacks:
 	db 0 ; no more evolutions
 	db 1, POISON_STING
-	db 6, SAND_ATTACK
-	db 13, HARDEN
-	db 20, QUICK_ATTACK
-	db 28, FAINT_ATTACK
-	db 36, SLASH
-	db 44, SCREECH
+	db 4, SAND_ATTACK
+	db 7, HARDEN
+	db 10, FAINT_ATTACK
+	db 13, QUICK_ATTACK
+	db 16, MUD_SLAP
+	db 19, MAGNITUDE
+	db 27, SLASH
+	db 28, DIG
+	db 35, SCREECH
+	db 40, CRABHAMMER
+	db 45, EARTHQUAKE
 	db 50, SWORDS_DANCE
 	db 0 ; no more level-up moves
 
@@ -2974,13 +2996,16 @@ SlugmaEvosAttacks:
 	db EVOLVE_LEVEL, 30, MAGCARGO
 	db 0 ; no more evolutions
 	db 1, SMOG
-	db 8, EMBER
-	db 15, ROCK_THROW
-	db 22, HARDEN
-	db 29, AMNESIA
-	db 36, FLAMETHROWER
-	db 43, ROCK_SLIDE
-	db 50, BODY_SLAM
+	db 6, EMBER
+	db 8, ROCK_THROW
+	db 13, HARDEN
+	db 15, FLAME_WHEEL
+	db 22, ANCIENTPOWER
+	db 27, AMNESIA
+	db 29, ROCK_SLIDE
+	db 34, FLAMETHROWER
+	db 41, BODY_SLAM
+	db 43, RECOVER
 	db 0 ; no more level-up moves
 
 MagcargoEvosAttacks:
@@ -2988,13 +3013,16 @@ MagcargoEvosAttacks:
 	db 1, SMOG
 	db 1, EMBER
 	db 1, ROCK_THROW
-	db 8, EMBER
-	db 15, ROCK_THROW
-	db 22, HARDEN
-	db 29, AMNESIA
-	db 36, FLAMETHROWER
-	db 48, ROCK_SLIDE
-	db 60, BODY_SLAM
+	db 6, EMBER
+	db 8, ROCK_THROW
+	db 13, HARDEN
+	db 15, FLAME_WHEEL
+	db 22, ANCIENTPOWER
+	db 27, AMNESIA
+	db 29, ROCK_SLIDE
+	db 34, FLAMETHROWER
+	db 41, BODY_SLAM
+	db 43, RECOVER
 	db 0 ; no more level-up moves
 
 SwinubEvosAttacks:
