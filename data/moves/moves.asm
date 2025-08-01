@@ -79,7 +79,7 @@ Moves:
 	move HYPER_BEAM,   EFFECT_HYPER_BEAM,        150, NORMAL,       SPECIAL,   90,  5,   0
 	move PECK,         EFFECT_NORMAL_HIT,         35, FLYING,       PHYSICAL, 100, 35,   0
 	move DRILL_PECK,   EFFECT_NORMAL_HIT,         80, FLYING,       PHYSICAL, 100, 20,   0
-	move SUBMISSION,   EFFECT_RECOIL_HIT,         80, FIGHTING,     PHYSICAL,  80, 25,   0
+	move SUBMISSION,   EFFECT_HYPER_BEAM,        120, FIGHTING,     PHYSICAL, 100,  5,   0
 	move LOW_KICK,     EFFECT_FLINCH_HIT,         50, FIGHTING,     PHYSICAL,  90, 20,  30
 	move COUNTER,      EFFECT_COUNTER,             1, FIGHTING,     PHYSICAL, 100, 20,   0
 	move SEISMIC_TOSS, EFFECT_LEVEL_DAMAGE,        1, FIGHTING,     PHYSICAL, 100, 20,   0
@@ -186,7 +186,7 @@ Moves:
 	move MIND_READER,  EFFECT_LOCK_ON,             0, NORMAL,       STATUS,   100,  5,   0
 	move NIGHTMARE,    EFFECT_NIGHTMARE,           0, GHOST,        STATUS,   100, 15,   0
 	move FLAME_WHEEL,  EFFECT_FLAME_WHEEL,        60, FIRE,         PHYSICAL, 100, 25,  10
-	move SNORE,        EFFECT_SNORE,              40, NORMAL,       STATUS,   100, 15,  30
+	move SNORE,        EFFECT_SNORE,              50, NORMAL,       SPECIAL,  100, 15,  30
 	move CURSE,        EFFECT_CURSE,               0, CURSE_TYPE,   STATUS,   100, 10,   0
 	move FLAIL,        EFFECT_REVERSAL,            1, NORMAL,       PHYSICAL, 100, 15,   0
 	move CONVERSION2,  EFFECT_CONVERSION2,         0, NORMAL,       STATUS,   100, 30,   0
@@ -203,7 +203,7 @@ Moves:
 	move BELLY_DRUM,   EFFECT_BELLY_DRUM,          0, NORMAL,       STATUS,   100, 10,   0
 	move SLUDGE_BOMB,  EFFECT_POISON_HIT,        110, POISON,       SPECIAL,   85, 10,  30
 	move MUD_SLAP,     EFFECT_ACCURACY_DOWN_HIT,  20, GROUND,       SPECIAL,  100, 10, 100
-	move OCTAZOOKA,    EFFECT_ACCURACY_DOWN_HIT,  65, WATER,        SPECIAL,   85, 10,  50
+	move OCTAZOOKA,    EFFECT_ACCURACY_DOWN_HIT,  85, WATER,        SPECIAL,   85, 10,  50
 	move SPIKES,       EFFECT_SPIKES,              0, GROUND,       STATUS,   100, 20,   0
 	move ZAP_CANNON,   EFFECT_PARALYZE_HIT,      100, ELECTRIC,     SPECIAL,   50,  5, 100
 	move FORESIGHT,    EFFECT_FORESIGHT,           0, NORMAL,       STATUS,   100, 40,   0
