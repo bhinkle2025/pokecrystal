@@ -21,4 +21,6 @@ UsefulMoves:
 	db FIRE_BLAST
 	db SOFTBOILED
 	db SUPER_FANG
+	db PLAY_ROUGH
+	db MOONBLAST
 	db -1 ; end

@@ -6,10 +6,15 @@ ResidualMoves:
 	db POISONPOWDER
 	db STUN_SPORE
 	db THUNDER_WAVE
-	db BIDE
+	db TOXIC
+	db GLARE
 	db POISON_GAS
 	db TRANSFORM
 	db CONVERSION
 	db SUBSTITUTE
+	db SPIDER_WEB
+	db BELLY_DRUM
 	db SPIKES
+	db MEAN_LOOK
+	db ATTRACT
 	db -1 ; end
