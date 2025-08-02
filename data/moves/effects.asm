@@ -1038,6 +1038,16 @@ TriAttack:
 	tristatuschance
 	endmove
 
+Growth:
+	checkobedience
+	usedmovetext
+	doturn
+	lowersub
+	statupanim
+	raisesub
+	growth
+	endmove
+
 Toxic:
 DoPoison:
 	checkobedience
