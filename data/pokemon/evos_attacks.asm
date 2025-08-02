@@ -3322,12 +3322,15 @@ ElekidEvosAttacks:
 	db 0 ; no more evolutions
 	db 1, QUICK_ATTACK
 	db 1, LEER
-	db 9, THUNDERPUNCH
-	db 17, LIGHT_SCREEN
+	db 5, THUNDERSHOCK
+	db 8, LOW_KICK
+	db 16, THUNDERPUNCH
+	db 19, THUNDER_WAVE
+	db 22, LIGHT_SCREEN
 	db 25, SWIFT
 	db 33, SCREECH
-	db 41, THUNDERBOLT
-	db 49, THUNDER
+	db 40, THUNDERBOLT
+	db 43, THUNDER
 	db 0 ; no more level-up moves
 
 MagbyEvosAttacks:

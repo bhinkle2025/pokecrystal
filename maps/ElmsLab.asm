@@ -92,10 +92,6 @@ ProfElmScript:
 	faceplayer
 	opentext
 
-	; Check for final starter eligibility FIRST
-	checkevent EVENT_ELM_GAVE_FINAL_STARTER
-	iftrue .AfterFinalStarterCheck
-
 	readvar VAR_DEXCAUGHT
 	ifgreater 100, .GiveFinalStarter
 	sjump .AfterFinalStarterCheck
@@ -112,9 +108,6 @@ ProfElmScript:
 	iftrue ElmCheckMasterBall
 	checkevent EVENT_BEAT_ELITE_FOUR
 	iftrue ElmGiveTicketScript
-	closetext
-	end
-
 
 ElmCheckMasterBall:
 	checkevent EVENT_GOT_MASTER_BALL_FROM_ELM

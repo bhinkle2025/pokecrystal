@@ -50,7 +50,7 @@ MrPokemonsHouseMrPokemonEventScript:
 MrPokemonsHouse_MrPokemonScript:
 	faceplayer
 	opentext
-	checkevent EVENT_RIVAL_NEW_BARK_TOWN
+	checkevent EVENT_COP_IN_ELMS_LAB
 	iftrue .ExpShare
 	checkevent EVENT_GAVE_MYSTERY_EGG_TO_ELM
 	iftrue .AlwaysNewDiscoveries
