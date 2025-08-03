@@ -3361,6 +3361,8 @@ INCLUDE "engine/battle/move_effects/destiny_bond.asm"
 
 INCLUDE "engine/battle/move_effects/hex.asm"
 
+INCLUDE "engine/battle/move_effects/acrobatics.asm"
+
 INCLUDE "engine/battle/move_effects/false_swipe.asm"
 
 INCLUDE "engine/battle/move_effects/heal_bell.asm"

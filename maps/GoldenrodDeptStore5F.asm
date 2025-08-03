@@ -88,9 +88,7 @@ GoldenrodDeptStore5FReceptionistScript:
 .NotVeryHappy:
 	writetext GoldenrodDeptStore5FReceptionistItLooksEvilHowAboutThisTMText
 	promptbutton
-	verbosegiveitem TM_FRUSTRATION
 	iffalse .Done
-	setflag ENGINE_GOLDENROD_DEPT_STORE_TM27_RETURN
 	closetext
 	end
 
@@ -160,10 +158,11 @@ GoldenrodDeptStore5FReceptionistItsAdorableText:
 	done
 
 GoldenrodDeptStore5FReceptionistItLooksEvilHowAboutThisTMText:
-	text "It looks evil. How"
-	line "about this TM for"
-	cont "it?"
+	text "Hmm… Your #MON"
+	line "doesn't seem happy."
+	cont "It can't use this TM."
 	done
+
 
 GoldenrodDeptStore5FReceptionistThereAreTMsPerfectForMonText:
 	text "There are sure to"
