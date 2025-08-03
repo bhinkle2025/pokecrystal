@@ -175,7 +175,7 @@
 	const TRIPLE_KICK  ; a7
 	const THIEF        ; a8
 	const SPIDER_WEB   ; a9
-	const MIND_READER  ; aa
+	const DRAGON_DANCE ; aa
 	const NIGHTMARE    ; ab
 	const FLAME_WHEEL  ; ac
 	const SNORE        ; ad
@@ -204,7 +204,7 @@
 	const ICY_WIND     ; c4
 	const DETECT       ; c5
 	const BONE_RUSH    ; c6
-	const LOCK_ON      ; c7
+	const CALM_MIND    ; c7
 	const OUTRAGE      ; c8
 	const SANDSTORM    ; c9
 	const GIGA_DRAIN   ; ca

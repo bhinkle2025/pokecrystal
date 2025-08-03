@@ -170,7 +170,7 @@ MoveDescriptions::
 	dw TripleKickDescription
 	dw ThiefDescription
 	dw SpiderWebDescription
-	dw MindReaderDescription
+	dw DragonDanceDescription
 	dw NightmareDescription
 	dw FlameWheelDescription
 	dw SnoreDescription
@@ -199,7 +199,7 @@ MoveDescriptions::
 	dw IcyWindDescription
 	dw DetectDescription
 	dw BoneRushDescription
-	dw LockOnDescription
+	dw CalmMindDescription
 	dw OutrageDescription
 	dw SandstormDescription
 	dw GigaDrainDescription
@@ -943,9 +943,9 @@ SpiderWebDescription:
 	db   "Prevents fleeing"
 	next "or switching.@"
 
-MindReaderDescription:
-	db   "Ensures the next"
-	next "attack will hit.@"
+DragonDanceDescription:
+	db   "Boosts Attack and"
+	next "Speed stats.@"
 
 NightmareDescription:
 	db   "A sleeper loses"
@@ -1059,9 +1059,9 @@ BoneRushDescription:
 	db   "An attack that"
 	next "hits 2-5 times.@"
 
-LockOnDescription:
-	db   "Ensures the next"
-	next "attack will hit.@"
+CalmMindDescription:
+	db   "Raises Spcl.Atk"
+	next "and Spcl.Def stats.@"
 
 OutrageDescription:
 	db   "Works 2-3 turns"

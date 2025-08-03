@@ -174,7 +174,6 @@ PoliwagEggMoves:
 	db SPLASH
 	db BUBBLEBEAM
 	db HAZE
-	db MIND_READER
 	db -1 ; end
 
 AbraEggMoves:
@@ -741,7 +740,6 @@ TyrogueEggMoves:
 	db RAPID_SPIN
 	db HI_JUMP_KICK
 	db MACH_PUNCH
-	db MIND_READER
 	db -1 ; end
 
 SmoochumEggMoves:

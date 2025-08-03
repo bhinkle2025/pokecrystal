@@ -818,7 +818,6 @@ PoliwrathEvosAttacks:
 	db 1, HYPNOSIS
 	db 1, DOUBLESLAP
 	db 1, SUBMISSION
-	db 51, MIND_READER
 	db 0 ; no more level-up moves
 
 AbraEvosAttacks:
@@ -835,6 +834,7 @@ KadabraEvosAttacks:
 	db 21, PSYBEAM
 	db 26, RECOVER
 	db 31, FUTURE_SIGHT
+	db 36, CALM_MIND
 	db 38, PSYCHIC_M
 	db 45, REFLECT
 	db 0 ; no more level-up moves
@@ -847,6 +847,7 @@ AlakazamEvosAttacks:
 	db 21, PSYBEAM
 	db 26, RECOVER
 	db 31, FUTURE_SIGHT
+	db 36, CALM_MIND
 	db 38, PSYCHIC_M
 	db 45, REFLECT
 	db 0 ; no more level-up moves
@@ -1076,7 +1077,7 @@ MagnemiteEvosAttacks:
 	db 11, SUPERSONIC
 	db 16, SONICBOOM
 	db 21, THUNDER_WAVE
-	db 27, LOCK_ON
+	db 27, THUNDERBOLT
 	db 33, SWIFT
 	db 39, SCREECH
 	db 45, ZAP_CANNON
@@ -1092,7 +1093,7 @@ MagnetonEvosAttacks:
 	db 11, SUPERSONIC
 	db 16, SONICBOOM
 	db 21, THUNDER_WAVE
-	db 27, LOCK_ON
+	db 27, THUNDERBOLT
 	db 29, TRI_ATTACK
 	db 35, SWIFT ; from G/S
 	db 43, SCREECH
@@ -1418,7 +1419,6 @@ HitmonleeEvosAttacks:
 	db 11, ROLLING_KICK
 	db 16, JUMP_KICK
 	db 26, HI_JUMP_KICK
-	db 31, MIND_READER
 	db 36, FORESIGHT
 	db 41, ENDURE
 	db 46, MEGA_KICK
@@ -1559,6 +1559,7 @@ HorseaEvosAttacks:
 	db 29, TWISTER
 	db 36, AGILITY
 	db 43, HYDRO_PUMP
+	db 50, DRAGON_DANCE
 	db 0 ; no more level-up moves
 
 SeadraEvosAttacks:
@@ -1573,6 +1574,7 @@ SeadraEvosAttacks:
 	db 22, WATER_GUN
 	db 29, TWISTER
 	db 40, AGILITY
+	db 50, DRAGON_DANCE
 	db 51, HYDRO_PUMP
 	db 0 ; no more level-up moves
 
@@ -1835,7 +1837,6 @@ PorygonEvosAttacks:
 	db 12, PSYBEAM
 	db 20, RECOVER
 	db 24, SHARPEN
-	db 32, LOCK_ON
 	db 36, TRI_ATTACK
 	db 44, ZAP_CANNON
 	db 0 ; no more level-up moves
@@ -1926,7 +1927,6 @@ ArticunoEvosAttacks:
 	db 1, POWDER_SNOW
 	db 13, MIST
 	db 25, AGILITY
-	db 37, MIND_READER
 	db 49, ICE_BEAM
 	db 61, REFLECT
 	db 73, BLIZZARD
@@ -1968,6 +1968,7 @@ DratiniEvosAttacks:
 	db 36, AGILITY
 	db 43, SAFEGUARD
 	db 50, OUTRAGE
+	db 50, DRAGON_DANCE
 	db 57, HYPER_BEAM
 	db 0 ; no more level-up moves
 
@@ -1984,6 +1985,7 @@ DragonairEvosAttacks:
 	db 29, SLAM
 	db 38, AGILITY
 	db 47, SAFEGUARD
+	db 50, DRAGON_DANCE
 	db 56, OUTRAGE
 	db 65, HYPER_BEAM
 	db 0 ; no more level-up moves
@@ -2000,6 +2002,7 @@ DragoniteEvosAttacks:
 	db 29, SLAM
 	db 38, AGILITY
 	db 47, SAFEGUARD
+	db 50, DRAGON_DANCE
 	db 54, WING_ATTACK
 	db 61, OUTRAGE
 	db 75, HYPER_BEAM
@@ -2038,6 +2041,7 @@ ChikoritaEvosAttacks:
 	db 9, POISONPOWDER
 	db 12, SYNTHESIS
 	db 12, REFLECT
+	db 17, GROWTH
 	db 20, GIGA_DRAIN
 	db 23, LEECH_SEED
 	db 29, BODY_SLAM
@@ -2055,6 +2059,7 @@ BayleefEvosAttacks:
 	db 9, POISONPOWDER
 	db 12, SYNTHESIS
 	db 12, REFLECT
+	db 17, GROWTH
 	db 20, GIGA_DRAIN
 	db 23, LEECH_SEED
 	db 29, BODY_SLAM
@@ -2071,6 +2076,7 @@ MeganiumEvosAttacks:
 	db 9, POISONPOWDER
 	db 12, SYNTHESIS
 	db 12, REFLECT
+	db 17, GROWTH
 	db 20, GIGA_DRAIN
 	db 23, LEECH_SEED
 	db 29, BODY_SLAM
@@ -2773,8 +2779,10 @@ MisdreavusEvosAttacks:
 UnownEvosAttacks:
 	db 0 ; no more evolutions
 	db 1, HIDDEN_POWER
+	db 1, TELEPORT
 	db 5, ANCIENTPOWER
 	db 10, CONFUSION
+	db 15, CALM_MIND
 	db 20, FUTURE_SIGHT
 	db 25, AMNESIA
 	db 30, NASTY_PLOT
@@ -3102,7 +3110,6 @@ RemoraidEvosAttacks:
 	db EVOLVE_LEVEL, 25, OCTILLERY
 	db 0 ; no more evolutions
 	db 1, WATER_GUN
-	db 6, LOCK_ON
 	db 10, PSYBEAM
 	db 14, AURORA_BEAM
 	db 18, BUBBLEBEAM
@@ -3205,6 +3212,7 @@ KingdraEvosAttacks:
 	db 22, WATER_GUN
 	db 29, TWISTER
 	db 40, AGILITY
+	db 48, DRAGON_DANCE
 	db 51, HYDRO_PUMP
 	db 0 ; no more level-up moves
 
@@ -3249,7 +3257,6 @@ Porygon2EvosAttacks:
 	db 12, PSYBEAM
 	db 20, RECOVER
 	db 24, DEFENSE_CURL
-	db 32, LOCK_ON
 	db 36, TRI_ATTACK
 	db 44, ZAP_CANNON
 	db 0 ; no more level-up moves
@@ -3263,6 +3270,7 @@ StantlerEvosAttacks:
 	db 16, SAND_ATTACK
 	db 21, DOUBLE_EDGE
 	db 23, CONFUSE_RAY
+	db 27, CALM_MIND
 	db 32, MEGAHORN
 	db 38, PSYCHIC_M
 	db 43, JUMP_KICK
@@ -3381,6 +3389,7 @@ RaikouEvosAttacks:
 	db 1, BITE
 	db 1, LEER
 	db 11, THUNDERSHOCK
+	db 18, CALM_MIND
 	db 21, ROAR
 	db 31, QUICK_ATTACK
 	db 41, SPARK
@@ -3394,6 +3403,7 @@ EnteiEvosAttacks:
 	db 1, BITE
 	db 1, LEER
 	db 11, EMBER
+	db 18, CALM_MIND
 	db 21, ROAR
 	db 31, FIRE_SPIN
 	db 41, STOMP
@@ -3407,6 +3417,7 @@ SuicuneEvosAttacks:
 	db 1, BITE
 	db 1, LEER
 	db 11, BUBBLEBEAM
+	db 18, CALM_MIND
 	db 21, RAIN_DANCE
 	db 31, GUST
 	db 41, AURORA_BEAM
@@ -3468,6 +3479,7 @@ LugiaEvosAttacks:
 	db 1, AEROBLAST
 	db 11, SAFEGUARD
 	db 22, GUST
+	db 27, CALM_MIND
 	db 33, RECOVER
 	db 44, HYDRO_PUMP
 	db 55, RAIN_DANCE
@@ -3482,6 +3494,7 @@ HoOhEvosAttacks:
 	db 1, SACRED_FIRE
 	db 11, SAFEGUARD
 	db 22, GUST
+	db 27, CALM_MIND
 	db 33, RECOVER
 	db 44, FIRE_BLAST
 	db 55, SUNNY_DAY

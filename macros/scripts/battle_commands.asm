@@ -73,7 +73,7 @@ ENDM
 	command painsplit               ; 42
 	command snore                   ; 43
 	command conversion2             ; 44
-	command lockon                  ; 45
+	command calmmind                ; 45
 	command sketch                  ; 46
 	command defrostopponent         ; 47
 	command sleeptalk               ; 48
@@ -180,6 +180,7 @@ ENDM
 	command supereffectivelooptext  ; ad
 	command startloop               ; ae
 	command curl                    ; af
+	command dragondance             ; ag
 DEF NUM_EFFECT_COMMANDS EQU const_value - 1
 
 	const_def -1, -1

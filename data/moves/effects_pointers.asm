@@ -79,7 +79,7 @@ MoveEffectsPointers:
 	dw SkyAttack
 	dw ConfuseHit
 	dw PoisonMultiHit
-	dw NormalHit
+	dw DragonDance
 	dw Substitute
 	dw HyperBeam
 	dw Rage
@@ -95,7 +95,7 @@ MoveEffectsPointers:
 	dw PainSplit
 	dw Snore
 	dw Conversion2
-	dw LockOn
+	dw CalmMind
 	dw Sketch
 	dw DefrostOpponent
 	dw SleepTalk

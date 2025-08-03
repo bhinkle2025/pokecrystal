@@ -171,7 +171,7 @@ BattleAnimations::
 	dw BattleAnim_TripleKick
 	dw BattleAnim_Thief
 	dw BattleAnim_SpiderWeb
-	dw BattleAnim_MindReader
+	dw BattleAnim_DragonDance
 	dw BattleAnim_Nightmare
 	dw BattleAnim_FlameWheel
 	dw BattleAnim_Snore
@@ -200,7 +200,7 @@ BattleAnimations::
 	dw BattleAnim_IcyWind
 	dw BattleAnim_Detect
 	dw BattleAnim_BoneRush
-	dw BattleAnim_LockOn
+	dw BattleAnim_CalmMind
 	dw BattleAnim_Outrage
 	dw BattleAnim_Sandstorm
 	dw BattleAnim_GigaDrain
@@ -2680,6 +2680,8 @@ BattleAnim_Thrash:
 	anim_wait 16
 	anim_ret
 
+BattleAnim_DragonDance:
+BattleAnim_CalmMind:
 BattleAnim_Growth:
 	anim_bgeffect BATTLE_BG_EFFECT_WHITE_HUES, $0, $8, $0
 	anim_1gfx BATTLE_ANIM_GFX_CHARGE
@@ -3092,19 +3094,6 @@ BattleAnim_SpiderWeb:
 	anim_wait 4
 	anim_obj BATTLE_ANIM_OBJ_STRING_SHOT, 64, 84, $0
 	anim_wait 64
-	anim_ret
-
-BattleAnim_MindReader:
-	anim_1gfx BATTLE_ANIM_GFX_MISC
-	anim_sound 0, 1, SFX_MIND_READER
-.loop
-	anim_obj BATTLE_ANIM_OBJ_MIND_READER, 132, 48, $3
-	anim_obj BATTLE_ANIM_OBJ_MIND_READER, 132, 48, $12
-	anim_obj BATTLE_ANIM_OBJ_MIND_READER, 132, 48, $20
-	anim_obj BATTLE_ANIM_OBJ_MIND_READER, 132, 48, $31
-	anim_wait 16
-	anim_loop 2, .loop
-	anim_wait 32
 	anim_ret
 
 BattleAnim_Nightmare:
@@ -3571,19 +3560,6 @@ BattleAnim_BoneRush:
 	anim_sound 0, 1, SFX_COMET_PUNCH
 	anim_obj BATTLE_ANIM_OBJ_HIT_YFIX, 144, 64, $0
 	anim_wait 16
-	anim_ret
-
-BattleAnim_LockOn:
-	anim_1gfx BATTLE_ANIM_GFX_MISC
-	anim_sound 0, 1, SFX_MIND_READER
-.loop
-	anim_obj BATTLE_ANIM_OBJ_LOCK_ON, 132, 48, $3
-	anim_obj BATTLE_ANIM_OBJ_LOCK_ON, 132, 48, $12
-	anim_obj BATTLE_ANIM_OBJ_LOCK_ON, 132, 48, $20
-	anim_obj BATTLE_ANIM_OBJ_LOCK_ON, 132, 48, $31
-	anim_wait 16
-	anim_loop 2, .loop
-	anim_wait 32
 	anim_ret
 
 BattleAnim_Outrage:

@@ -22,7 +22,6 @@ MoveGrammar:
 	db REST
 	db SHARPEN
 	db SUBSTITUTE
-	db MIND_READER
 	db SNORE
 	db PROTECT
 	db SPIKES

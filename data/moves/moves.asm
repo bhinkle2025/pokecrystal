@@ -183,7 +183,7 @@ Moves:
 	move TRIPLE_KICK,  EFFECT_TRIPLE_KICK,        25, FIGHTING,     PHYSICAL,  90, 10,   0
 	move THIEF,        EFFECT_THIEF,              60, DARK,         PHYSICAL, 100, 10, 100
 	move SPIDER_WEB,   EFFECT_MEAN_LOOK,           0, BUG,          STATUS,   100, 10,   0
-	move MIND_READER,  EFFECT_LOCK_ON,             0, NORMAL,       STATUS,   100,  5,   0
+	move DRAGON_DANCE, EFFECT_DRAGON_DANCE,        0, DRAGON,       STATUS,   100, 20,   0
 	move NIGHTMARE,    EFFECT_NIGHTMARE,           0, GHOST,        STATUS,   100, 15,   0
 	move FLAME_WHEEL,  EFFECT_FLAME_WHEEL,        60, FIRE,         PHYSICAL, 100, 25,  10
 	move SNORE,        EFFECT_SNORE,              50, NORMAL,       SPECIAL,  100, 15,  30
@@ -212,7 +212,7 @@ Moves:
 	move ICY_WIND,     EFFECT_SPEED_DOWN_HIT,     55, ICE,          SPECIAL,   95, 15, 100
 	move DETECT,       EFFECT_PROTECT,             0, FIGHTING,     STATUS,   100,  5,   0
 	move BONE_RUSH,    EFFECT_MULTI_HIT,          25, GROUND,       PHYSICAL,  80, 10,   0
-	move LOCK_ON,      EFFECT_LOCK_ON,             0, NORMAL,       STATUS,   100,  5,   0
+	move CALM_MIND,    EFFECT_CALM_MIND,           0, PSYCHIC_TYPE, STATUS,   100, 20,   0
 	move OUTRAGE,      EFFECT_RAMPAGE,           120, DRAGON,       PHYSICAL, 100, 10,   0
 	move SANDSTORM,    EFFECT_SANDSTORM,           0, ROCK,         STATUS,   100, 10,   0
 	move GIGA_DRAIN,   EFFECT_LEECH_HIT,          75, GRASS,        SPECIAL,  100,  5,   0
