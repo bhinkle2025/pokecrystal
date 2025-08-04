@@ -634,7 +634,6 @@ VenonatEvosAttacks:
 	db 0 ; no more evolutions
 	db 1, TACKLE
 	db 1, FORESIGHT
-	db 5, TOXIC
 	db 9, SUPERSONIC
 	db 17, CONFUSION
 	db 20, POISONPOWDER
@@ -3364,7 +3363,6 @@ ElekidEvosAttacks:
 	db 8, LOW_KICK
 	db 16, THUNDERPUNCH
 	db 19, THUNDER_WAVE
-	db 19, BEAT_UP
 	db 22, LIGHT_SCREEN
 	db 25, SWIFT
 	db 33, SCREECH
