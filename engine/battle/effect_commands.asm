@@ -3675,10 +3675,10 @@ BattleCommand_PoisonTarget:
 	ld a, [wTypeModifier]
 	and EFFECTIVENESS_MASK
 	ret z
-	ld a, POISON ; Don't poison a Poison-type
+	ld b, POISON ; Don't poison a Poison-type
 	call CheckIfTargetIsGivenType
 	ret z
-	ld a, STEEL ; Don't poison a Steel-type
+	ld b, STEEL ; Don't poison a Steel-type
 	call CheckIfTargetIsGivenType
 	ret z
 	call GetOpponentItem
@@ -3708,11 +3708,11 @@ BattleCommand_Poison:
 	and EFFECTIVENESS_MASK
 	jp z, .failed
 
-	ld a, POISON
+	ld b, POISON
 	call CheckIfTargetIsGivenType
 	jp z, .failed
 
-	ld a, STEEL
+	ld b, STEEL
 	call CheckIfTargetIsGivenType
 	jp z, .failed
 
@@ -3926,7 +3926,7 @@ BattleCommand_BurnTarget:
 	ld a, [wTypeModifier]
 	and EFFECTIVENESS_MASK
 	ret z
-	ld a, FIRE ; Don't burn a Fire-type
+	ld b, FIRE ; Don't burn a Fire-type
 	call CheckIfTargetIsGivenType
 	ret z
 	call GetOpponentItem
@@ -3994,7 +3994,7 @@ BattleCommand_FreezeTarget:
 	ld a, [wBattleWeather]
 	cp WEATHER_SUN
 	ret z
-	ld a, ICE ; Don't freeze an Ice-type
+	ld b, ICE ; Don't freeze an Ice-type
 	call CheckIfTargetIsGivenType
 	ret z
 	call GetOpponentItem
@@ -4043,7 +4043,7 @@ BattleCommand_ParalyzeTarget:
 	ld a, [wTypeModifier]
 	and EFFECTIVENESS_MASK
 	ret z
-	ld a, ELECTRIC ; Don't paralyze an Electric-type
+	ld b, ELECTRIC ; Don't paralyze an Electric-type
 	call CheckIfTargetIsGivenType
 	ret z
 	call GetOpponentItem

@@ -526,27 +526,41 @@ WigglytuffEvosAttacks:
 ZubatEvosAttacks:
 	db EVOLVE_LEVEL, 22, GOLBAT
 	db 0 ; no more evolutions
-	db 1, LEECH_LIFE
-	db 6, SUPERSONIC
-	db 12, BITE
-	db 19, CONFUSE_RAY
-	db 27, WING_ATTACK
-	db 36, MEAN_LOOK
-	db 46, HAZE
+	db 1, ABSORB
+	db 1, QUICK_ATTACK
+	db 1, GUST
+	db 5, SUPERSONIC
+	db 11, BITE
+	db 17, CONFUSE_RAY
+	db 19, WING_ATTACK
+	db 23, SWIFT
+	db 25, LEECH_LIFE
+	db 28, ACID
+	db 29, MEAN_LOOK
+	db 33, ACROBATICS
+	db 35, HAZE
+	db 37, TOXIC
+	db 41, AIR_SLASH
 	db 0 ; no more level-up moves
 
 GolbatEvosAttacks:
 	db EVOLVE_HAPPINESS, TR_ANYTIME, CROBAT
 	db 0 ; no more evolutions
-	db 1, SCREECH
-	db 1, LEECH_LIFE
-	db 1, SUPERSONIC
-	db 6, SUPERSONIC
-	db 12, BITE
-	db 19, CONFUSE_RAY
-	db 30, WING_ATTACK
-	db 42, MEAN_LOOK
-	db 55, HAZE
+	db 1, ABSORB
+	db 1, QUICK_ATTACK
+	db 1, GUST
+	db 5, SUPERSONIC
+	db 11, BITE
+	db 17, CONFUSE_RAY
+	db 19, WING_ATTACK
+	db 23, SWIFT
+	db 25, LEECH_LIFE
+	db 28, ACID
+	db 29, MEAN_LOOK
+	db 33, ACROBATICS
+	db 35, HAZE
+	db 37, TOXIC
+	db 41, AIR_SLASH
 	db 0 ; no more level-up moves
 
 OddishEvosAttacks:
@@ -620,6 +634,7 @@ VenonatEvosAttacks:
 	db 0 ; no more evolutions
 	db 1, TACKLE
 	db 1, FORESIGHT
+	db 5, TOXIC
 	db 9, SUPERSONIC
 	db 17, CONFUSION
 	db 20, POISONPOWDER
@@ -2327,15 +2342,21 @@ AriadosEvosAttacks:
 
 CrobatEvosAttacks:
 	db 0 ; no more evolutions
-	db 1, SCREECH
-	db 1, LEECH_LIFE
-	db 1, SUPERSONIC
-	db 6, SUPERSONIC
-	db 12, BITE
-	db 19, CONFUSE_RAY
-	db 30, WING_ATTACK
-	db 42, MEAN_LOOK
-	db 55, HAZE
+	db 1, ABSORB
+	db 1, QUICK_ATTACK
+	db 1, GUST
+	db 5, SUPERSONIC
+	db 11, BITE
+	db 17, CONFUSE_RAY
+	db 19, WING_ATTACK
+	db 23, SWIFT
+	db 25, LEECH_LIFE
+	db 28, ACID
+	db 29, MEAN_LOOK
+	db 33, ACROBATICS
+	db 35, HAZE
+	db 37, TOXIC
+	db 41, AIR_SLASH
 	db 0 ; no more level-up moves
 
 ChinchouEvosAttacks:
@@ -2967,11 +2988,15 @@ ShuckleEvosAttacks:
 	db 0 ; no more evolutions
 	db 1, CONSTRICT
 	db 1, WITHDRAW
+	db 1, ROLLOUT
 	db 9, WRAP
 	db 14, ENCORE
+	db 20, REST
 	db 23, SAFEGUARD
-	db 28, BIDE
-	db 37, REST
+	db 23, ROCK_THROW
+	db 27, ACID
+	db 34, CURSE
+	db 37, ROCK_SLIDE
 	db 0 ; no more level-up moves
 
 HeracrossEvosAttacks:
@@ -3339,6 +3364,7 @@ ElekidEvosAttacks:
 	db 8, LOW_KICK
 	db 16, THUNDERPUNCH
 	db 19, THUNDER_WAVE
+	db 19, BEAT_UP
 	db 22, LIGHT_SCREEN
 	db 25, SWIFT
 	db 33, SCREECH
@@ -3367,10 +3393,11 @@ MiltankEvosAttacks:
 	db 8, DEFENSE_CURL
 	db 13, STOMP
 	db 19, MILK_DRINK
-	db 26, BIDE
+	db 26, HEADBUTT
 	db 34, ROLLOUT
-	db 43, BODY_SLAM
+	db 40, BODY_SLAM
 	db 45, PLAY_ROUGH
+	db 50, CHARM
 	db 53, HEAL_BELL
 	db 0 ; no more level-up moves
 
